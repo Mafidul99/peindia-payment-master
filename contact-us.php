@@ -1,3 +1,5 @@
+<?php include('process-mail.php'); ?>
+
 <!doctype html>
 <html lang="en">
 <!-- Added by HTTrack -->
@@ -159,26 +161,26 @@
                     <div class="col-md-6">
                         <div class="contact-us-form gray-light-bg rounded p-5">
                             <h4>Have You Any Query?</h4>
-                            <form action="process-mail.php" method="POST" id="contactForm" class="contact-us-form">
+                            <form action="" method="POST" id="contactForm" class="contact-us-form">
                                 <div class="form-row">
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
+                                            <input type="text" class="form-control" name="name" placeholder="Enter name" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="phone" placeholder="Enter mobile number" required="required">
+                                            <input type="text" class="form-control" name="phone" placeholder="Enter mobile number" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Enter email" required="required">
+                                            <input type="email" class="form-control" name="email" placeholder="Enter email" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-3">
@@ -284,4 +286,29 @@
 </div>
 
 <!--model section end-->
+
+<script>
+    if(window.history.replaceState){
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
+<?php
+if(isset($_SESSION['status']) && $_SESSION['status'] !='')
+{
+    ?>
+        <script>            
+            Swal.fire({
+            position: 'top-end',
+            toast: true,
+            icon: '<?php echo $_SESSION['status_code']; ?>',            
+            //title: 'Thank you !',
+            text: "<?php echo $_SESSION['status']; ?>",
+            showConfirmButton: false,
+            timer: 7000
+            })
+        </script>        
+    <?php
+    unset($_SESSION['status']);
+}
+?>
 

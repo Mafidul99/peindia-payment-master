@@ -10,8 +10,7 @@ $mail = new PHPMailer(true);
 
 //$alert = '';
 
-	if(isset($_POST['submit'])) {
-		
+	if(isset($_POST['submit'])) {		
 	$name = $_POST['name'];
 	$Mobile = $_POST['phone'];
 	$email = $_POST['email'];
@@ -19,6 +18,9 @@ $mail = new PHPMailer(true);
 	$pan = $_POST['pan'];
 	$add = $_POST['add'];
 	$message = $_POST['message'];
+	$attachment = $_FILES['attachment']['tmp_name'];
+	$attachment2 = $_FILES['attachment2']['tmp_name'];
+
 
 		try{
 			$mail->isSMTP();
@@ -32,11 +34,16 @@ $mail = new PHPMailer(true);
 			$mail->setFrom('mafidul.peindia@gmail.com'); // Gmail address which you want to use as STMP server//
 			$mail->addAddress('mdonline192@gmail.com');
 
+			$mail->addAttachment($attachment);    // Optional name
+			$mail->addAttachment($attachment2);    // Optional name
+
 			$mail->isHTML(true);
-			$mail->Subject = "Peindia Payments";
+			$mail->Subject = "Registration Form Peindia Payments";
 			$mail->Body = "<h3> Name : $name <br> Mobile Number : $Mobile <br> Email ID : $email 
 			<br> Aadhaar Number : $aadhaar <br> Pan Card Number : $pan <br> Full Address : $add <br> Message : $message</h3>";
 
+
+			
 
 			$mail->send();
 			//$alert ='<div class="alert-success"> <span> Registration Successfully ! Thank you for Contacting Us. </span> </div>';

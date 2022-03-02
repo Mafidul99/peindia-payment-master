@@ -100,7 +100,7 @@
                     <div class="col-md-9">
                         <div class="contact-us-form gray-light-bg rounded p-5">
                             <h3 class="text-center">Online Registration Form</h3>
-                            <form action="" method="POST" id="contactForm" class="contact-us-form">
+                            <form action="" method="POST" id="contactForm" class="contact-us-form" enctype="multipart/form-data">
                                 <div class="form-row">
                                     <div class="col-12">
                                         <div class="form-group">
@@ -133,6 +133,17 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="form-row">                                    
+                                        <div class="form-group col-md-6">
+                                            <label >Upload Aadhaar Card</label>
+                                            <input type="file" class="form-control" name="attachment" required>
+                                        </div>                                    
+                                        <div class="form-group col-md-6">
+                                            <label >Upload Pan Card</label>
+                                            <input type="file" class="form-control" name="attachment2" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-3">

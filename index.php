@@ -590,7 +590,7 @@
 
                             <div class="col-lg-12 col-md-12 p-0">
                                 <div class="form-group">
-                                    <center><a href="#" class="btn secondary-outline-btn" data-toggle="modal" data-target="#onlineform">
+                                    <center><a href="onlineRegis.php" class="btn secondary-outline-btn">
                                             Online Registration Form</a></center>
                                     
                                 </div>

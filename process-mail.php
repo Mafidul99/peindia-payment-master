@@ -1,35 +1,47 @@
 <?php
+
+session_start();
+use PHPMailer\PHPMailer\PHPMailer;
+
+require_once 'phpmailer/Exception.php';
+require_once 'phpmailer/PHPMailer.php';
+require_once 'phpmailer/SMTP.php';
+
+$mail = new PHPMailer(true);
+
+
 if(isset($_POST['submit'])) {
 	
 $name = $_POST['name'];
 $Mobile = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-if($name=='' || $Mobile=='' || $email=='' || $message==''){
-	echo "</script>alert('All fields are required !')</script>";
-} else {
 
-$from       = "Peindia Digital.";
-$webmaster  = "mdonline192@gmail.com"; //It's web master mail info@example.com
-$to         = "mafidul.peindia@gmail.com"; // where you want to get mail 
-$subject    = " Contact Us From Peindia Digital.";
+try{
+	$mail->isSMTP();
+	$mail->Host = 'smtp.gmail.com';
+	$mail->SMTPAuth = true;
+	$mail->Username = 'mafidul.peindia@gmail.com'; // Gmail address which you want to use as STMP server//
+	$mail->Password = 'India12#';
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+	$mail->Port = '587';
 
-$headers    = "From: " . $from . "<" . $webmaster . ">\r\n";
-$headers    .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers    .= "MIME-Version: 1.0" . "\r\n";
-$headers    .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$mail->setFrom('mafidul.peindia@gmail.com'); // Gmail address which you want to use as STMP server//
+	$mail->addAddress('mdonline192@gmail.com');
 
-$message = "<html><body>";
-$message .= "<p>Name :".$_POST['name']  ."</p>";
-$message .= "<p>Mobile :".$_POST['phone']  ."</p>";
-$message .= "<p>Email : ". $_POST['email'] ."</p>";
-$message .= "<p>Message :".$_POST['message']."</p>";
-$message .= "</body></html>";
+	$mail->isHTML(true);
+	$mail->Subject = "Contact Us From Peindia Payments";
+	$mail->Body = "<h3> Name : $name <br> Mobile Number : $Mobile <br> Email ID : $email  <br> Message : $message</h3>";
 
- if (mail($to, $subject, $message, $headers));
 
- echo "<script>alert('Thank you for contact us, our team will contact with you very soon')</script>";
- echo "<script>window.open('contact-us.php?sent=Your Form Has been Submited','_self')</script>";
+	$mail->send();
+	//$alert ='<div class="alert-success"> <span> Registration Successfully ! Thank you for Contacting Us. </span> </div>';
+	$_SESSION['status'] = "Thank you for contact us, our team will contact with you very soon";
+	$_SESSION['status_code'] = "success";
+}catch (Exception $e){
+	//$alert ='<div class="alert-error"> <span>'.$e->getMessage().' </span> </div>';
+	$_SESSION['status'] = "Registration Not Successfull ! Plaese try again";
+	$_SESSION['status_code'] = "success";
 }
 }
 
