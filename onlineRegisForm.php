@@ -34,8 +34,8 @@ $message = $_POST['message'];
 
 		$mail->isHTML(true);
 		$mail->Subject = "Peindia Payments";
-		$mail->Body = "<h3> Name : $name <br>Mobile : $Mobile <br> Email : $email 
-		<br> Aadhaar No. : $aadhaar <br> Pan Card No. : $pan <br> Address : $add <br> Message : $message</h3>";
+		$mail->Body = "<h3> Name : $name <br> Mobile Number : $Mobile <br> Email ID : $email 
+		<br> Aadhaar Number : $aadhaar <br> Pan Card Number : $pan <br> Full Address : $add <br> Message : $message</h3>";
 
 
 		$mail->send();
