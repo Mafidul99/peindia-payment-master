@@ -145,6 +145,8 @@
 <script src="js/jquery.easy-pie-chart.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/mainloading.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
