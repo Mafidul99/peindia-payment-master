@@ -76,9 +76,9 @@
                             <h1 class="text-white">Peindia API Platform Buy Unlimited API</h1>
                             <p class="lead">Grow your bussiness online and make it visible globally. Launch your website with elegant design in wallet friendly price. </p>
 
-                            <!----<div class="action-btns mt-3">
-                                <a href="services.php" class="btn secondary-solid-btn2">Our Services</a>
-                            </div>--->
+                            <div class="action-btns mt-3">
+                                <a href="onlineRegis.php" class="btn secondary-solid-btn3">Online Registration Form</a> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-7">

@@ -483,13 +483,7 @@ a:hover {
 
 .secondary-solid-btn2 {
     color: #fff;
-    background: #e80566;
-    border: 1px solid #e80566;
-}
-
-.secondary-solid-btn2 {
-    color: #fff;
-    background: #e80566;
+    background: transparent !important;
     border: 1px solid #e80566;
 }
 
@@ -499,6 +493,22 @@ a:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #050103;
+}
+
+.secondary-solid-btn3 {
+    color: #F39614;
+    font-size: 18px;
+    padding: 12px 17px;
+    background: transparent !important;
+    border: 1px solid #F39614;
+}
+
+.secondary-solid-btn3:hover {
+    background: transparent !important;
+    color: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ffffff;
 }
 
 .secondary-outline-btn {
