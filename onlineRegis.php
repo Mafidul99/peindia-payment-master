@@ -138,11 +138,11 @@
                                     </div>
                                     <div class="form-row">                                    
                                         <div class="form-group col-md-6">
-                                            <label >Upload Aadhaar Card</label>
+                                            <label >Upload Aadhaar Card <strong class="jpgcolor"> (only jpg File)</strong></label>
                                             <input type="file" class="form-control" name="attachment" required>
                                         </div>                                    
                                         <div class="form-group col-md-6">
-                                            <label >Upload Pan Card</label>
+                                            <label >Upload Pan Card <strong class="jpgcolor"> (only jpg File)</strong></label>
                                             <input type="file" class="form-control" name="attachment2" required>
                                         </div>
                                     </div>
