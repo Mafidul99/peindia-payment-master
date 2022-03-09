@@ -5916,5 +5916,32 @@ small {
     color: red;
 }
 
+.tremscon {
+    font-size: 22px;
+    color: #F39614;
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: #F39614;
+    text-transform: uppercase;
+}
+
+.texttems {
+    font-style: normal;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(1, 20, 104);
+    font-family: 'Roboto', sans-serif;
+    color: #F39614;
+}
+
+.ptexttems {
+    text-align: justify;
+    color: #000;
+}
+
+.linktext {
+    color: #0325e7;
+    font-weight: 700;
+}
+
 
 /**apply btn*/

@@ -50,6 +50,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact-us.php">Contact Us</a>
+                                    </li>                                    
+                                    <li class="nav-item">
+                                        <a href="nsdl-csp.php">NSDL CSP</a>
                                     </li>
                                 </ul>
 
@@ -72,10 +75,10 @@
                                         <a class="nav-link" href="digital-marketing-in-guwahati.php">Digital Marketing</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">KYC Form</a>
+                                        <a class="nav-link" href="terms_and_condition.php">Terms & Conditions</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nsdl-csp.php">NSDL CSP</a>
+                                        <a class="nav-link" href="privacy_policy.php">Privacy Policy</a>
                                     </li>
                                 </ul>
                             </div>
@@ -116,8 +119,8 @@
                 </div>
                 <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
                     <ul class="list-inline policy-nav text-right social-list">
-                        <li class="list-inline-item"><a href="#" target="_blank">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank">Terms & Conditions</a></li>
+                        <li class="list-inline-item "><a class="linktext" href="privacy_policy.php" target="_blank">Privacy Policy</a></li>
+                        <li class="list-inline-item "><a class="linktext" href="terms_and_condition.php" target="_blank">Terms & Conditions</a></li>
                     </ul>
                 </div>
             </div>
