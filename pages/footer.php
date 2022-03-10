@@ -80,6 +80,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="privacy_policy.php">Privacy Policy</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="grievance_policy.php">Grievance Policy</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
