@@ -18,16 +18,16 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 try{
-	$mail->isSMTP();
-	$mail->Host = 'smtp.gmail.com';
+	//$mail->isSMTP();
+	$mail->Host = 'server.peindia.net.in';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'mafidul.peindia@gmail.com'; // Gmail address which you want to use as STMP server//
-	$mail->Password = 'India12#';
-	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-	$mail->Port = '587';
+	$mail->Username = 'mailsupport@peindia.net.in'; // Gmail address which you want to use as STMP server//
+	$mail->Password = 'Peindia@123@123';
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+	$mail->Port = '465';
 
-	$mail->setFrom('mafidul.peindia@gmail.com'); // Gmail address which you want to use as STMP server//
-	$mail->addAddress('mdonline192@gmail.com');
+	$mail->setFrom('mailsupport@peindia.net.in'); // Gmail address which you want to use as STMP server//
+	$mail->addAddress('peindiapay@hotmail.com');
 
 	$mail->isHTML(true);
 	$mail->Subject = "Contact Us From Peindia Payments";
