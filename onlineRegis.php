@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Peindia API - Website Design & Development | Software & App Development </title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body onload="myFunction()">
@@ -146,6 +148,11 @@
                                             <input type="file" class="form-control" name="attachment2" required>
                                         </div>
                                     </div>
+                                    <div class="form-row">                                    
+                                        <div class="form-group ">
+                                        <div class="g-recaptcha" data-sitekey="6LcImc4eAAAAAIcK4nuyCvW5DTvJy3DlcHW2Geh-" required></div>
+                                        </div>
+                                    </div>
                                     <div class="col-sm-12 mt-3">
                                         <button type="submit" name="submit" class="btn secondary-solid-btn" id="btnContactUs">
                                         Submit
@@ -168,6 +175,7 @@
 
 
     <!--Registration Form  Code Menu-->
+    
 <script>
     if(window.history.replaceState){
         window.history.replaceState(null, null, window.location.href);
