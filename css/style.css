@@ -5969,5 +5969,17 @@ th {
     font-weight: bold;
 }
 
+.foobtn .footerbtn {
+    padding: 12px 20px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.foobtn .footerbtn:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #f59002;
+}
+
 
 /**apply btn*/

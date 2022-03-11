@@ -53,7 +53,7 @@
                                     </li>                                    
                                     <li class="nav-item">
                                         <a href="nsdl-csp.php">NSDL CSP</a>
-                                    </li>
+                                    </li>                                    
                                 </ul>
 
                             </div>
@@ -102,6 +102,9 @@
                                     </li>
                                     <li class="d-flex align-items-center py-2">
                                         <span class="fas fa-phone-alt mr-2"></span> Helpline : +91 7099021308
+                                    </li> <br>
+                                    <li class="nav-item foobtn">
+                                        <a  href="https://api.peindia.net.in/login" class="btn btn-danger footerbtn" terget="_blank">Log-In / SignUp</a>
                                     </li>
                                 </ul>
                             </div>
