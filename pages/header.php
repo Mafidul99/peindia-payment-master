@@ -29,7 +29,7 @@
                             <li><a href="pan-api.php">Pan Card API</a></li>
                             <li><a href="sms-api.php">Bulk SMS API</a></li>
                             <li><a href="micro-atm-api.php">Micro ATM API</a></li>
-                            <li><a href="Mobile-api.php">Mobile API</a></li>
+                            <li><a href="mobile-api.php">Mobile API</a></li>
                             <li><a href="flight-api.php">Flight Booking API</a></li>
                             <li><a href="voter&update-api.php">Voter ID Enrollment API</a></li>
                             <li><a href="aadhaar-pay-api.php">Aadhaar Pay API</a></li>
