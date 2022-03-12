@@ -33,9 +33,7 @@
                             <li><a href="flight-api.php">Flight Booking API</a></li>
                             <li><a href="voter&update-api.php">Voter ID Enrollment API</a></li>
                             <li><a href="aadhaar-pay-api.php">Aadhaar Pay API</a></li>
-                            <li><a href="irctc-api.php">Railway Ticket Booking API</a></li>
-
-                            
+                            <li><a href="irctc-api.php">Railway Ticket Booking API</a></li>                            
                         </ul>
                     </li>
                     <li><a href="#" class="dropdown-toggle"> ATM</a>
