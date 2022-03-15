@@ -102,6 +102,7 @@
                     <div class="col-md-9">
                         <div class="contact-us-form gray-light-bg rounded p-5">
                             <h3 class="text-center">Online Registration Form</h3>
+                            <P class="text-center">Peindia Payments Retailer ID Free</P>
                             <form action="" method="POST" id="contactForm" class="contact-us-form" enctype="multipart/form-data">
                                 <div class="form-row">
                                     <div class="col-12">
@@ -148,10 +149,20 @@
                                             <input type="file" class="form-control" name="attachment2" required>
                                         </div>
                                     </div>
-                                    <div class="form-row">                                    
-                                        <div class="form-group ">
+                                     <br>
+                                    <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                            <label class="form-check-label" for="gridCheck">
+                                            I have read and agree to 
+                                            <a class="linktext" href="terms_and_condition.php" target="_blank">Terms & Conditions</a>
+                                            </label>
+                                            </div>
+                                        </div>                                                                       
+                                        <div class="form-group col-md-6">
                                         <div class="g-recaptcha" data-sitekey="6LcImc4eAAAAAIcK4nuyCvW5DTvJy3DlcHW2Geh-" required></div>
-                                        </div>
+                                        </div>                                        
                                     </div>
                                     <div class="col-sm-12 mt-3">
                                         <button type="submit" name="submit" class="btn secondary-solid-btn" id="btnContactUs">
