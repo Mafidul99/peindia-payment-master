@@ -815,7 +815,7 @@
 
     </div>
     <!--body content wrap end-->
-
+    
 
 <?php include('pages/footer.php'); ?>
 
@@ -880,5 +880,6 @@
 </div>
 
 <!--model section end-->
+
 
     

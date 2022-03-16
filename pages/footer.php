@@ -50,10 +50,10 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact-us.php">Contact Us</a>
-                                    </li>                                    
+                                    </li>
                                     <li class="nav-item">
                                         <a href="nsdl-csp.php">NSDL CSP</a>
-                                    </li>                                    
+                                    </li>
                                 </ul>
 
                             </div>
@@ -104,7 +104,7 @@
                                         <span class="fas fa-phone-alt mr-2"></span> Helpline : +91 7099021308
                                     </li> <br>
                                     <li class="nav-item foobtn">
-                                        <a  href="https://api.peindia.net.in/login" class="btn btn-danger footerbtn" terget="_blank">Log-In / SignUp</a>
+                                        <a href="https://api.peindia.net.in/login" class="btn btn-danger footerbtn" terget="_blank">Log-In / SignUp</a>
                                     </li>
                                 </ul>
                             </div>
@@ -172,6 +172,37 @@
     })();
 </script>
 <!--End of Tawk.to Script-->
+<!--modal popup start-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title texthead" id="exampleModalLabel">SURYODAY BANK</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center addptext">Peindia Payments CSP Provider!</p>
+                <iframe width="460" height="315" src="https://www.youtube.com/embed/j4bRexj6VJc" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                <!--<a href="https://www.youtube.com/watch?v=j4bRexj6VJc"><img width="470" height="auto" src="image/bankadd.JPG" alt="bankadd.JPG"></a>-->
+            </div>
+            <div class="modal-footer">
+                <img src="image/click.gif" width=40px height=40px>
+                <a class="text-center btn btn-primary" href="onlineRegis.php">Online Registration Form</a>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal popup end-->
+<script>
+    $(document).ready(function() {
+        $("#myModal").modal('show');
+    });
+</script>
 
 </body>
 

@@ -5981,5 +5981,19 @@ th {
     border: 1px solid #f59002;
 }
 
+.addptext {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #030d1e;
+}
+
+.texthead {
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    color: #F39614;
+}
+
 
 /**apply btn*/
