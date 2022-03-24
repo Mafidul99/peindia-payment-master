@@ -1,0 +1,48 @@
+/********* Push Red **********/
+
+.form-submit-button-push_red{
+
+    cursor: pointer;
+
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+
+    padding:8px 15px;
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow:0px -1px 0px #770900;
+
+    border:3px solid #911208;
+
+	-moz-box-shadow:inset 0px 1px 1px 0px #ff9a50, 0px 0px 0px 3px #c8381f;
+	-webkit-box-shadow:inset 0px 1px 1px 0px #ff9a50, 0px 0px 0px 3px #c8381f;
+	box-shadow:inset 0px 1px 1px 0px #ff9a50, 0px 0px 0px 3px #c8381f;
+
+    background: #d02e17; /* old browsers */
+	background: -moz-linear-gradient(top, #ef4c26 0%, #dc4116 50%, #d02e17 51%, #b21109 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef4c26), color-stop(50%,#dc4116), color-stop(51%,#d02e17), color-stop(100%,#b21109)); /* webkit */
+	background: linear-gradient(top, #ef4c26 0%,#dc4116 50%,#d02e17 51%,#b21109 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc4116', endColorstr='#b21109',GradientType=0 ); /* ie */
+}
+
+.form-submit-button-push_red:hover{
+    color: #ffffff !important;
+    border:3px solid #911208 !important;
+    background: #df371f; /* old browsers */
+	background: -moz-linear-gradient(top, #ff6642 0%, #eb481b 50%, #df371f 51%, #c11f10 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6642), color-stop(50%,#eb481b), color-stop(51%,#df371f), color-stop(100%,#c11f10)); /* webkit */
+	background: linear-gradient(top, #ff6642 0%,#eb481b 50%,#df371f 51%,#c11f10 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb481b', endColorstr='#c11f10',GradientType=0 ); /* ie */}
+
+.form-submit-button-push_red:active{
+	color: #ffffff !important;
+	border:3px solid #911208 !important;
+	-moz-box-shadow:inset 0px 1px 5px 0px rgba(0, 0, 0, 0.40), 0px 0px 0px 3px #c8381f;
+	-webkit-box-shadow:inset 0px 1px 5px 0px rgba(0, 0, 0, 0.40), 0px 0px 0px 3px #c8381f;
+	box-shadow:inset 0px 1px 5px 0px rgba(0, 0, 0, 0.40), 0px 0px 0px 3px #c8381f;
+}
+
