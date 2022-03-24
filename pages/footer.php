@@ -191,7 +191,7 @@
             </div>
             <div class="modal-footer">
                 <img src="image/click.gif" width=40px height=40px>
-                <a class="text-center btn btn-primary" href="assets/BANK_CSP/BANK_CSP.html">Online Registration Form</a>
+                <a class="text-center btn btn-primary" href="assets/BANK_CSP/BANK_CSP.html" target="_blank">Online Registration Form</a>
                 <!--<button type="button" class="btn btn-primary">Save changes</button>-->
             </div>
         </div>
