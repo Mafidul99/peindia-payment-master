@@ -2486,6 +2486,7 @@ var JotForm = {
             parameters.platform = 'APP';
             parameters.platform_id = window.JFAppsManager.appID;
             parameters.checkoutKey = window.JFAppsManager.checkoutKey;
+            parameters.submissionID = window.JFAppsManager.submissionID;
         }
 
         var a = new Ajax.Jsonp(JotForm.url + '/server.php', {
@@ -2532,6 +2533,7 @@ var JotForm = {
                         });
                     }
 
+                    window.postMessage({ fromV3: true, action: { name: 'formReadyToContinue' } }, '*');
                 }
 
                 // Releasing blocking of next/prev buttons after submissin data filling has done
@@ -9788,6 +9790,8 @@ var JotForm = {
             var isSpecialPricing = false;               // Check that is there a special pricing
             var quantity = 1;                           // Product quantity
             var specialName = [];                       // Special pricing informations. F.e T-Shirt: XS
+            var unitProductAmountForSpecialPrice = 0;   // Special unit price
+            var priceIndex;
 
             // get the parent product id if this is a subproduct
             if (pair.key.split('_').length === 4) {
@@ -9849,6 +9853,7 @@ var JotForm = {
                     }
                 }
                 isSpecialPricing = true;
+                unitProductAmountForSpecialPrice = pair.value.specialPriceList[priceIndex];
             }
 
             priceWithoutDiscount = price;
@@ -10074,6 +10079,8 @@ var JotForm = {
                         quantity: isSpecialPricing ? 1 : quantity,
                         description: description.substr(0, 124),
                         isSetupfee: isSetupFee,
+                        isSpecialPricing: isSpecialPricing,
+                        unitProductAmountForSpecialPrice: Number(unitProductAmountForSpecialPrice)
                     });
                 }
                 // If product price is being discounted to zero by a coupon and the gateway is being the one of the specified above in the array
