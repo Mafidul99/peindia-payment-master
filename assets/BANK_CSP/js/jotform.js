@@ -986,7 +986,6 @@ var JotForm = {
                 this.initNumberInputs();
                 this.initTextboxValidation();
                 this.setAPIUrl();
-                this.handleSSOPrefill();
                 this.initPrefills();
                 this.createManualPrefill();
                 
@@ -1008,6 +1007,7 @@ var JotForm = {
                 this.runAllCalculations();
                 this.setCalculationResultReadOnly();
                 this.prePopulations();
+                this.handleSSOPrefill();
                 this.handleAutoCompletes();
                 this.handleTextareaLimits();
                 this.handleDateTimeChecks();
@@ -2532,8 +2532,6 @@ var JotForm = {
                             }).putValue(res.jfFormUserSCL_emailSentTo)
                         });
                     }
-
-                    window.postMessage({ fromV3: true, action: { name: 'formReadyToContinue' } }, '*');
                 }
 
                 // Releasing blocking of next/prev buttons after submissin data filling has done
@@ -3675,6 +3673,7 @@ var JotForm = {
                     var offs = el.cumulativeOffset();
 
                     list.setStyle({
+                        backgroundColor: '#f0f8ff',
                         top: ((dims.height + offs[1])) + 'px',
                         left: offs[0] + 'px',
                         width: ((dims.width < 1 ? 100 : dims.width) - 2) + 'px'
@@ -5622,7 +5621,7 @@ var JotForm = {
                             }
                         } else if ($(tempInput)) {
                             value = $(tempInput).value;
-                            if (value === undefined) {
+                            if (value === undefined || value === '') {
                                 return;
                                 /* continue; */
                             }
@@ -6136,9 +6135,7 @@ var JotForm = {
                             }
 
                             var toBeClearField = condition.action[0].resultField;
-                            if (!JotForm.isEditMode()) {
-                                JotForm.clearField(toBeClearField, subfield, dontTrigger);
-                            }
+                            JotForm.clearField(toBeClearField, subfield, dontTrigger);
 
                             // when clearing a field from condition calculation, remove them from __antiLoopCache as well
                             // so recalculation will be triggered on the result field once again
@@ -6569,7 +6566,7 @@ var JotForm = {
                         break;
                     case 'INPUT':
                         if ((['checkbox', 'radio'].include(input.type) && !input.checked) || input.type === 'file'
-                            || (['year_' + qid, 'month_' + qid, 'day_' + qid, 'lite_mode_' + qid ]).include(input.id))
+                            || (['year_' + qid, 'month_' + qid, 'day_' + qid, 'lite_mode_' + qid ]).include(input.id) || (input.getAttribute('data-type') === 'input-spinner'))
                         {
                             input.disable();
                         }
@@ -7787,6 +7784,9 @@ var JotForm = {
         switch (resultFieldType) {
             case "inline":
                 if (result.indexOf('|') > -1) {
+                    var idPatcher = { addr_line1: 'streetaddress', addr_line2: 'addressline2', postal: 'zip' };
+                    var selectFieldId = [ "country" ]; // used for replace the input tag with select tag
+
                     var splitResult = result.split('|');
                     var qid = splitResult[0];
                     var fieldId = splitResult[1];
@@ -7796,7 +7796,10 @@ var JotForm = {
                     var resultFields = $$(selector);
                     var hasCombinedField = false;
                     Object.keys(combinedObject).forEach(function(id) {
-                        var selector = isNewIDType ? '#id_' + qid + ' input[id*=' + fieldId + '-' + id + ']' : '#id_' + qid + ' input[id*=' + id + '][id$=-' + fieldId + ']';
+                        var patchedId = idPatcher[id] ? idPatcher[id] : id;
+                        var selectInput = selectFieldId.indexOf(patchedId) > -1 ? 'select' : 'input';
+
+                        var selector = isNewIDType ? '#id_' + qid + ' input[id*=' + fieldId + '-' + id + ']' : '#id_' + qid + ' ' + selectInput + '[id*=' + patchedId + '][id$=-' + fieldId + ']';
                         var visibleFields = $$(selector).filter(function (field) {
                             return JotForm.isVisible(field) || field.id.indexOf('lite_mode' > -1);
                         });
@@ -8394,7 +8397,14 @@ var JotForm = {
                     inputs = $$('input[name*="_' + stripped + '"],select[name*="_' + stripped + '"]');
                 }
                 if(inputs.length > 0) {
-                    var field = inputs.first().up(".form-line");
+                    var field;
+                    $A(inputs).each(function (input) {
+                        var parsedInputName = input.name.split('_');
+
+                        if (parsedInputName.indexOf(stripped) > -1) {
+                            field = input.up(".form-line");
+                        }
+                    });
                     if(field) {
                         return field.id.replace(/.*id_/,"");
                     }
@@ -16093,6 +16103,10 @@ var JotForm = {
           }
         }
       });
+        if (window.FORM_MODE === 'cardform') {
+            var cards = window.CardForm.cards;
+            window.CardForm.checkCardsIfFilled(cards);
+        }
     }
   },
 

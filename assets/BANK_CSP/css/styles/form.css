@@ -8,6 +8,25 @@
     font-family: Verdana;
     font-size: 12px;
 }
+
+/* if the user add  formm in app builder */
+
+.isOpenedInApp body {
+  margin: 0;
+  background-color: transparent;
+}
+.isOpenedInApp .jotform-form {
+  padding: 0;
+}
+.isOpenedInApp .form-all {
+  background-color: transparent;
+}
+.isOpenedInApp.supernova .form-all, .form-all {
+  border: none;
+}
+
+/* if the user add  formm in app builder end */
+
 .form-line .form-radio-item:not(#foo) .form-radio-other + label , .form-line .form-checkbox-item .form-checkbox-other + label { width: auto; }
 .form-line .form-radio-item .form-radio-other.form-textbox + label, .form-line .form-checkbox-item .form-checkbox-other.form-textbox + label { display: none !important;}
 .form-line .form-radio-item:not(#foo) .form-radio-other-input.form-textbox:not([style*="margin-left: 26px"] ), .form-line  .form-checkbox-item:not(#foo) .form-checkbox-other-input.form-textbox:not([style*="margin-left: 26px"] ){ margin-left: 0px; }

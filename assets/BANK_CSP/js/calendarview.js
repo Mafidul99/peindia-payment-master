@@ -659,9 +659,10 @@ Calendar.prototype = {
   setDynamicLimits: function() {
 
     var getComparativeDate = function(dat) {
-      if(dat.indexOf('today') > -1) {
+      var todayKey = dat.indexOf('today') > -1 ? /today/ : new RegExp(Calendar.TODAY.trim(), 'i');
+      if(todayKey.test(dat)) {
         var comp = new Date();
-        var offset = parseInt(dat.replace(/\s/g, "").split('today')[1]) || 0;
+        var offset = parseInt(dat.replace(/\s/g, "").split(todayKey)[1]) || 0;
         comp.setDate(comp.getDate() + offset);
         return comp.getFullYear()+"-"+JotForm.addZeros(comp.getMonth()+1, 2)+"-"+JotForm.addZeros(comp.getDate(), 2);
       } else {

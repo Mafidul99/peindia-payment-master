@@ -641,9 +641,6 @@ screen and (max-device-width: 415px) and (orientation: landscape) {
 	display: flex;
 	padding: 16px 0px 16px 2px;
 }
-
-.paypal-toggle-buttons {
-}
 .paypal-toggle { width: 100%; }
 
 
@@ -687,11 +684,6 @@ screen and (max-device-width: 415px) and (orientation: landscape) {
     top: 0;
     left: 0;
 }
-
-.paypal-toggle .selected {
-}
-
-.paypal-toggle div:last-child {}
 .paypal-toggle div:nth-child(2) {
 	background-image: url('https://cdn.jotfor.ms/assets/img/payments/PG-PP.svg');
 	background-position: left 24px top 11px;

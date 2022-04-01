@@ -1,0 +1,50 @@
+/********* Simple Rose **********/
+
+.form-submit-button-simple_rose{
+
+    cursor: pointer;
+
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+
+    padding:8px 18px;
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow:-1px -1px 0px #b23d35;
+
+    border:1px solid #d83526;
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #f7c4c0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f7c4c0;
+	box-shadow:inset 0px 1px 0px 0px #f7c4c0;
+
+    background: #e4685d; /* old browsers */
+    background: -moz-linear-gradient(top, #fc8d83 0%, #e4685d 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc8d83), color-stop(100%,#e4685d)); /* webkit */
+	background: linear-gradient(top, #fc8d83 0%, #e4685d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc8d83', endColorstr='#e4685d', GradientType=0 ); /* ie */
+}
+
+.form-submit-button-simple_rose:hover{
+    border:1px solid #d83526;
+    background: #ee776d; /* old browsers */
+    background: -moz-linear-gradient(top, #ffa69e 0%, #ee776d 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa69e), color-stop(100%,#ee776d)); /* webkit */
+	background: linear-gradient(top, #ffa69e 0%, #ee776d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa69e', endColorstr='#ee776d', GradientType=0 ); /* ie */
+}
+
+.form-submit-button-simple_rose:active{
+	border:1px solid #d83526;
+    position: relative;
+	top: 1px;
+    background: #ee776d; /* old browsers */
+    background: -moz-linear-gradient(top, #ee776d 0%, #ffa69e 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee776d), color-stop(100%,#ffa69e)); /* webkit */
+	background: linear-gradient(top, #ee776d 0%, #ffa69e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee776d', endColorstr='#ffa69e', GradientType=0 ); /* ie */
+}
