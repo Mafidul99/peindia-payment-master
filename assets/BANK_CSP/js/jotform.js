@@ -980,6 +980,7 @@ var JotForm = {
                 this.jumpToPage();
 
                 this.highLightLines();
+                this.handleWidgetMessage();
                 this.setButtonActions();
                 this.initGradingInputs();
                 this.initSpinnerInputs();
@@ -11123,6 +11124,29 @@ var JotForm = {
                 });
             });
         });
+    },
+    // Handle messages from widget (iframe)
+    handleWidgetMessage: function() {
+        window.addEventListener("message", function (message) {
+            if (message.data && message.data.type) {
+                switch(message.data.type) {
+                  case 'collapse':
+                    this.widgetSectionCollapse(message.data.qid);
+                    break;
+                  default:
+                    break;
+                }
+            }
+        }, false);
+    },
+    // Bug fix :: 3409477 (Terms & Conditions + Section Collapse Bug) & 3765441 (Section Collapse disappears when tabbed over)
+    widgetSectionCollapse: function(qid) {
+        if (qid) {
+            var el = document.getElementById('cid_' + qid);
+            if (JotForm.isCollapsed(el)) {
+                JotForm.getCollapseBar(el).run('click');
+            }
+        }
     },
     /**
      * Gets the container FORM of the element
