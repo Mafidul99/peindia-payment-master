@@ -95,7 +95,7 @@
                                 <h4 class="text-white">GET IN TOUCH</h4>
                                 <ul class="get-in-touch-list">
                                     <li class="d-flex align-items-center py-2">
-                                        <span class="fas fa-map-marker-alt mr-2"></span> Sixmile Panajabari Road,Guwahati- 781022, Assam
+                                        <span class="fas fa-map-marker-alt mr-2"></span> Sixmile Panjabari Road,Guwahati- 781022, Assam
                                     </li>
                                     <li class="d-flex align-items-center py-2">
                                         <span class="fas fa-envelope mr-2"></span> support@peindia.net.in
@@ -191,7 +191,7 @@
             </div>
             <div class="modal-footer">
                 <img src="image/click.gif" width=40px height=40px>
-                <a class="text-center btn btn-primary" href="assets/BANK_CSP/SURYODAY_BANK_CSP.html" target="_blank">CSP Apply Now</a>
+                <a class="text-center btn btn-primary" href="assets/BANK_CSP/BANK_CSP.html" target="_blank">CSP Apply Now</a>
                 <!--<button type="button" class="btn btn-primary">Save changes</button>-->
             </div>
         </div>
