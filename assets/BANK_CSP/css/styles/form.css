@@ -11,17 +11,18 @@
 
 /* if the user add  formm in app builder */
 
-.isOpenedInApp body {
+.isEmbeddedInPortal body {
   margin: 0;
   background-color: transparent;
 }
-.isOpenedInApp .jotform-form {
+.isEmbeddedInPortal .jotform-form {
   padding: 0;
 }
-.isOpenedInApp .form-all {
+.isEmbeddedInPortal .form-all {
   background-color: transparent;
+  max-width: 100%;
 }
-.isOpenedInApp.supernova .form-all, .form-all {
+.isEmbeddedInPortal.supernova .form-all, .form-all {
   border: none;
 }
 

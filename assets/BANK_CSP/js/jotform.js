@@ -523,6 +523,10 @@ var JotForm = {
                     field.type = 'text';
                 }
 
+                if (submitFormAfterEncrypt && fieldType === 'control_textbox') {
+                    field = JotForm.removeValidations(field, "(Alphabetic|AlphaNumeric|Currency|Cyrillic|Email|Numeric|Url)");
+                }
+
                 field.value = encryptedAnswer;
             //}
         });
@@ -5622,7 +5626,7 @@ var JotForm = {
                             }
                         } else if ($(tempInput)) {
                             value = $(tempInput).value;
-                            if (value === undefined || value === '') {
+                            if (value === undefined) {
                                 return;
                                 /* continue; */
                             }
@@ -6136,7 +6140,9 @@ var JotForm = {
                             }
 
                             var toBeClearField = condition.action[0].resultField;
-                            JotForm.clearField(toBeClearField, subfield, dontTrigger);
+                            if (!JotForm.isEditMode()) {
+                                JotForm.clearField(toBeClearField, subfield, dontTrigger);
+                            }
 
                             // when clearing a field from condition calculation, remove them from __antiLoopCache as well
                             // so recalculation will be triggered on the result field once again
@@ -6496,6 +6502,10 @@ var JotForm = {
             var isSignatureField = $('id_' + qid).getAttribute('data-type') === "control_signature";
             var isAppointmentField = $('id_' + qid).getAttribute('data-type') === "control_appointment";
             var appointmentElements = isAppointmentField ? Array.from($('id_' + qid).querySelectorAll(".calendarDay:not(.isUnavailable):not(.empty), .calendarDay.conditionallyDisabled, .appointmentSlot:not(.disabled), .appointmentSlot.conditionallyDisabled")) : [];
+            var notDisabledWidgets = [ "configurableList" ]; // widgets that cannot be disabled
+            var isNDWidget = $('id_' + qid).readAttribute('data-type') === 'control_widget' && JotForm.getWidgetType(qid) && notDisabledWidgets.indexOf(JotForm.getWidgetType(qid)) !== -1;
+            var notDisabledWidget = isNDWidget ? $('id_' + qid).down("iframe") : false;
+
             var elements = [];
             if (subfieldID) {
                 elements = $('id_' + qid).select("input[id*=" + subfieldID + "], select[id*=" + subfieldID + "]");
@@ -6514,6 +6524,9 @@ var JotForm = {
                     input.removeClassName("conditionallyDisabled");
                     if (signaturePad && signaturePad.jSignature) {
                         signaturePad.jSignature('enable');
+                    }
+                    if (notDisabledWidget) {
+                        notDisabledWidget.setStyle({ 'pointer-events': '' });
                     }
                     if (!JotForm.isEditMode()) {
                         input.enable();
@@ -6545,6 +6558,9 @@ var JotForm = {
                 input.addClassName("conditionallyDisabled");
                 if (signaturePad && signaturePad.jSignature) {
                     signaturePad.jSignature('disable');
+                }
+                if (notDisabledWidget) {
+                    notDisabledWidget.setStyle({ 'pointer-events': 'none' });
                 }
                 if (!JotForm.isEditMode()) {
                     input.disable();
@@ -8398,14 +8414,7 @@ var JotForm = {
                     inputs = $$('input[name*="_' + stripped + '"],select[name*="_' + stripped + '"]');
                 }
                 if(inputs.length > 0) {
-                    var field;
-                    $A(inputs).each(function (input) {
-                        var parsedInputName = input.name.split('_');
-
-                        if (parsedInputName.indexOf(stripped) > -1) {
-                            field = input.up(".form-line");
-                        }
-                    });
+                    var field = inputs.first().up(".form-line");
                     if(field) {
                         return field.id.replace(/.*id_/,"");
                     }
@@ -11131,7 +11140,7 @@ var JotForm = {
             if (message.data && message.data.type) {
                 switch(message.data.type) {
                   case 'collapse':
-                    this.widgetSectionCollapse(message.data.qid);
+                    JotForm.widgetSectionCollapse(message.data.qid);
                     break;
                   default:
                     break;
@@ -14420,6 +14429,22 @@ var JotForm = {
             return input.className.replace(/.*validate\[(.*)\].*/, '$1').split(/\s*,\s*/);
         }
         return [];
+    },
+    /*
+     * remove the input validations using by regex pattern
+     */
+    removeValidations: function(input, pattern) {
+        var validationPattern = new RegExp('(validate\\[(.*)?' + pattern + '(.*)?\\])');
+        if (validationPattern.test(input.className)) {
+            var matches = validationPattern.exec(input.className);
+            var validationClass = matches[0]
+                .replace(new RegExp(pattern + '(\\,\\s*)?', 'g'), '')
+                .replace(/\,\s(?!\w+)/g, '');
+            input.className = input.className.replace(validationPattern, validationClass).replace(' validate[]', '');
+            return input;
+        }
+
+        return input;
     },
     /*
     * Replace the notation with value and returns the valid message
