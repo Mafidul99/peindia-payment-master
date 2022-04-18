@@ -18,8 +18,8 @@ $mail = new PHPMailer(true);
 	$pan = $_POST['pan'];
 	$add = $_POST['add'];
 	$message = $_POST['message'];
-	$attachment = $_FILES['attachment']['tmp_name.jpg'];
-	$attachment2 = $_FILES['attachment2']['tmp_name.jpg'];
+	$attachment = $_FILES['attachment']['tmp_name'];
+	$attachment2 = $_FILES['attachment2']['tmp_name'];
 
 
 		try{
