@@ -24,7 +24,7 @@
     <meta property="og:url" content="" />
     <!-- where do you want your post to link to -->
     <meta property="og:type" content="article" />
-    <link rel="icon" href="image/favicon12.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="image/faa_logo.png" type="image/png" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">

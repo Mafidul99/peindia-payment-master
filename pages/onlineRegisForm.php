@@ -18,8 +18,8 @@ $mail = new PHPMailer(true);
 	$pan = $_POST['pan'];
 	$add = $_POST['add'];
 	$message = $_POST['message'];
-	$attachment = $_FILES['attachment']['tmp_name.jpg'];
-	$attachment2 = $_FILES['attachment2']['tmp_name.jpg'];
+	$attachment = $_FILES['attachment']['tmp_name'];
+	$attachment2 = $_FILES['attachment2']['tmp_name'];
 
 
 		try{
@@ -27,7 +27,7 @@ $mail = new PHPMailer(true);
 			$mail->Host = 'server.peindia.net.in';
 			$mail->SMTPAuth = true;
 			$mail->Username = 'mailsupport@peindia.net.in'; // Gmail address which you want to use as STMP server//
-			$mail->Password = 'Peindia@123@123';
+			$mail->Password = 'J3bZHAwRba_g';
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 			$mail->Port = '465';
 
