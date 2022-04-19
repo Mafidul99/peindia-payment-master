@@ -5996,19 +5996,7 @@ th {
 }
 
 .banklogo {
-    text-align: center;
-}
-
-.textform1 {
-    font-size: 15px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    color: #030d1e;
-}
-
-.formcomb {
-    color: red;
-    font-size: 20px;
+    align-items: center;
 }
 
 
