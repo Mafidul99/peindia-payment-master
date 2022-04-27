@@ -90,9 +90,7 @@
                             <div class="action-btns mt-3">
                                 <a href="onlineRegis.php" class="btn secondary-solid-btn3">Online Registration Form</a> 
                             </div>
-                            <div class="action-btns mt-3">
-                                <a href="./assets/New_Bank_CSP_2022/CspregistrationForm.php" class="btn secondary-solid-btn3">Suryoday Bank CSP</a> 
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-7">

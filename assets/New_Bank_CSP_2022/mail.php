@@ -1,8 +1,5 @@
 <?php
-
 $message = '';
-
-
 if (isset($_POST["submit"])) {
     $skills = '';
     foreach ($_POST["skills"] as $row) {

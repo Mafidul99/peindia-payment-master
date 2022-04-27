@@ -8,7 +8,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="ti-menu"></span>
             </button>
-            <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">                
                 <ul class="navbar-nav ml-auto menu">
                     <li><a href="https://peindia.net.in/">Home</a></li>                    
                     <li><a href="#" class="dropdown-toggle"> Services</a>
@@ -44,21 +44,20 @@
                             <li><a href="#">MICRO ATM</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://peindiacab.in/" target="_blank">CAB</a></li>
-                    <li><a href="#" target="_blank">CSC</a></li>
                     <li><a href="about-us.php">About Us</a></li>
-                    <li><a href="contact-us.php">Contact Us</a></li>
-                    
+                    <li><a href="contact-us.php">Contact Us</a></li>                    
                     <li><a href="https://api.peindia.net.in/login/" target="_blank" class="btn secondary-solid-btn check-btn"> Login</a>
-                        <!--<ul class="sub-menu">
-                            <li><a href="#" target="_blank">API Login</a></li>
-                            <li><a href="https://api.peindia.net.in/login/" target="_blank">Admin Login</a></li>
-                            <li><a href="https://api.peindia.net.in/login/" target="_blank">Retailer Login</a></li>
-                        </ul>-->
+                    </ul>
                     </li>
                     </li>
-                </ul>
-            </div>
+                </ul>                
+            </div>            
         </div>
+            <ul>
+                <li>
+                    <a href="assets/BANK_CSP/SURYODAY_BANK_CSP.html" target="_blank" class="btn btn-info check-btn"> 
+                        <img src="image/click.gif" width=22px height=22px> CSP Apply</a>
+                </li>
+            </ul>
     </nav>
     </header>

@@ -173,7 +173,7 @@
 </script>
 <!--End of Tawk.to Script-->
 <!--modal popup start-->
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -187,16 +187,17 @@
                 <iframe width="460" height="315" src="https://www.youtube.com/embed/j4bRexj6VJc" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
-                <!--<a href="https://www.youtube.com/watch?v=j4bRexj6VJc"><img width="470" height="auto" src="image/bankadd.JPG" alt="bankadd.JPG"></a>-->
+                <!-<a href="https://www.youtube.com/watch?v=j4bRexj6VJc">
+                    <img width="470" height="auto" src="image/bankadd.JPG" alt="bankadd.JPG"></a>
             </div>
             <div class="modal-footer">
                 <img src="image/click.gif" width=40px height=40px>
                 <a class="text-center btn btn-primary" href="assets/BANK_CSP/SURYODAY_BANK_CSP.html" target="_blank">CSP Apply Now</a>
-                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                <!-<button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!--modal popup end-->
 <script>
     $(document).ready(function() {

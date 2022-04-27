@@ -43,8 +43,7 @@ include_once('mail.php');
     <title>Peindia API - Website Design & Development | Software & App Development </title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha256-5YmaxAwMjIpMrVlK84Y/+NjCpKnFYa8bWWBbUHSBGfU=" crossorigin="anonymous"></script>
+    
 </head>
 
 <body onload="myFunction()">
@@ -122,10 +121,10 @@ include_once('mail.php');
                                             </select>
                                           </div>                                    
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="fname" placeholder="First Name" required="required">
+                                            <input type="text" class="form-control" name="fname" placeholder="First Name" required="required">
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="lname" placeholder="Last Name"  required="required">
+                                            <input type="text" class="form-control" name="lname" placeholder="Last Name"  required="required">
                                         </div>
                                     </div>
                                     <label class="textform1"> Father Name <span class="formcomb">*</span> </label>                                
@@ -138,10 +137,10 @@ include_once('mail.php');
                                             </select>
                                           </div>                                    
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="ffname" placeholder="First Name" required="required">
+                                            <input type="text" class="form-control" name="ffname" placeholder="First Name" required="required">
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="flname" placeholder="Last Name" required="required">
+                                            <input type="text" class="form-control" name="flname" placeholder="Last Name" required="required">
                                         </div>
                                     </div>
                                     <label class="textform1"> Mother Name <span class="formcomb">*</span> </label>                                
@@ -153,28 +152,28 @@ include_once('mail.php');
                                             </select>
                                           </div>                                    
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="mfname" placeholder="First Name"  required="required">
+                                            <input type="text" class="form-control" name="mfname" placeholder="First Name"  required="required">
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="mlname" placeholder="Last Name"  required="required">
+                                            <input type="text" class="form-control" name="mlname" placeholder="Last Name"  required="required">
                                         </div>
                                     </div>
-                                    <div class="form-row">                                    
+                                    <div class="form-row"> 
+                                        <div class="form-group col-md-3">
+                                          <label class="textform1"> Date of Birth <span class="formcomb">*</span> </label> 
+                                            <input type="date" name="bday">                                                                                   
+                                          </div>                                   
                                         <div class="form-group col-md-4">
                                         <label class="textform1"> Gender <span class="formcomb">*</span> </label> 
                                         <select id="inputState" class="form-control">
-                                              <option selected>Select....</option>
+                                              <option selected>Select...</option>
                                               <option>Male</option>
                                               <option>Female</option>
                                             </select>
-                                        </div>                                                                           
-                                        <div class="form-group col-md-3">
-                                        <label class="textform1"> Date of Birth <span class="formcomb">*</span> </label> 
-                                          <input type="date" name="bday">                                                                                   
                                         </div>
                                         <div class="form-group col-md-5">
                                         <label class="textform1"> Mobile Number <span class="formcomb">*</span> </label> 
-                                        <input type="email" class="form-control" name="phone" placeholder="Enter Mobile Number"  required="required">                                                                                   
+                                        <input type="text" class="form-control" name="phone" placeholder="Enter Mobile Number"  required="required">                                                                                   
                                         </div>
                                     </div>
                                     <div class="form-row">                                    
@@ -224,10 +223,10 @@ include_once('mail.php');
                                             </select>
                                           </div>                                    
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="mfname" placeholder="First Name">
+                                            <input type="text" class="form-control" name="sfname" placeholder="First Name">
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <input type="email" class="form-control" name="mlname" placeholder="Last Name">
+                                            <input type="text" class="form-control" name="slname" placeholder="Last Name">
                                         </div>
                                     </div> 
                                     <br>
@@ -236,12 +235,12 @@ include_once('mail.php');
                                         <div class="form-group col-md-6">
                                             <label >Upload Aadhaar Card (Size - 500kb to 1MB)
                                                <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachment" required>
+                                            <input type="file" class="form-control" name="attachmentA" required>
                                         </div>                                    
                                         <div class="form-group col-md-6">
                                             <label >Upload Pan Card (Size - 500kb to 1MB)
                                                <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachment2" required>
+                                            <input type="file" class="form-control" name="attachmentP" required>
                                         </div>
                                     </div>
                                     <br>
@@ -249,12 +248,12 @@ include_once('mail.php');
                                         <div class="form-group col-md-6">
                                             <label >Your Current Photo Upload  (Size - 500kb to 1MB) 
                                               <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachment" required>
+                                            <input type="file" class="form-control" name="attachmentPo" required>
                                         </div>                                    
                                         <div class="form-group col-md-6">
                                             <label >Your Signature (Size - 500kb to 1MB)
                                                <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachment2" required>
+                                            <input type="file" class="form-control" name="attachmentSi" required>
                                         </div>
                                         
                                     </div>
@@ -271,7 +270,7 @@ include_once('mail.php');
                                         </div>                               
                                     </div>
                                     <div class="col-sm-12 mt-3">
-                                        <button type="submit" name="submit" class="btn secondary-solid-btn" id="btnContactUs">
+                                        <button type="submit" name="submit" class="btn btn-warning btn-lg " id="btnContactUs">
                                         Submit
                                     </button>
                                     </div>
