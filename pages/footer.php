@@ -156,21 +156,13 @@
 <script src="js/mainloading.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
-
-<!--Start of Tawk.to Script-->
+<!--Add the following script at the bottom of the web page (before </body></html>)-->
 <script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/60ab98e5bbd5354c0fdbcb47/1f6f4qhf6';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
+function add_chatinline()
+{var hccid=54172059;var nt=document.createElement("script");nt.async=true;
+    nt.src="https://www.mylivechat.com/chatinline.aspx?hccid="+hccid;var 
+    ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline();</script>
 <!--End of Tawk.to Script-->
 <!--modal popup start-->
 <!--<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
