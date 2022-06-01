@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Peindia API - Website Design & Development | Software & App Development </title>
+    <title>Peindia AePS Money Transfer | Micro Atm Services </title>
 </head>
 
 <body onload="myFunction()">
@@ -74,12 +74,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-7">
                     <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                        <h1 class="text-white mb-0">Micro ATM API</h1>
+                        <h1 class="text-white mb-0">Pan Card API</h1>
                         <div class="custom-breadcrumb">
                             <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                <li class="list-inline-item breadcrumb-item">
-                                    <a href="https://peindia.net.in/">Home</a></li>
-                                <li class="list-inline-item breadcrumb-item active">Micro ATM API</li>
+                                <li class="list-inline-item breadcrumb-item"><a href="https://peindia.net.in/">Home</a></li>
+                                <li class="list-inline-item breadcrumb-item active">Pan Card API</li>
                             </ol>
                         </div>
                     </div>
@@ -92,73 +91,82 @@
     <!--project details section start-->
     <section class="project-details-section ptb-95">
         <div class="container">
-            <div class="row justify-content-between"></div>
+            <div class="row justify-content-between">
+                
+            </div>
 
             <!--project details row start-->
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="project-details-content text-color1">
-                        <h5 class="aeps-h5">Micro ATM API</h5>
-                        <p align="justify">If You Are Intending a Domestic Trip from the Destination in India and Bound 
-                            to Instant Flight Booking Hassles. Book Airfare Tickets Online in Minutes at Our Portal and 
-                            Make Preparations for the Trip. with the Sudden Boom in the Aviation Industry, There Was a 
-                            Fast Growth in Domestic Flights in India.
-                              <br><br>
-                              Make Online Domestic Flight Ticket Booking Without Facing Hustles & Bustles at the Ticket Counter.
-                               Whether It Be One-Way or Round-Trip, We Offer You the Convenience to Lease Flight Tickets Online 
-                               Everywhere You Look and Anytime. You Can Also Pick the Choice of Class I.e. Economy Class or Business
-                                Class Starting from Your Home.
+                        <h5 class="aeps-h5">Pan Card API</h5>
+                        <p align="justify">Previously getting a PAN Card created is quite a difficult process. But now people can 
+                            easily create their PAN Card online through our APIs with comfort. Softcare Infotech is the topmost PAN 
+                            Card enrollment, update, and verification API provider in India. Permanent Account Number also is known 
+                            as PAN Card is a 10 digit alphanumeric number which is issued by the Income Tax Department of India to 
+                            every citizen of India. It is basically.
                         </p>
-                        
+
+                        <p align="justify">An identity code that gives access to all your major transactions to the Income Tax 
+                            Department for maintaining the record. PAN Card has become essential for banking also.Being the oldest 
+                            and the best brand for the PAN Card verification API provider in India Softcare Infotech has created his
+                             name in the API market. Looking for NSDL and UTI PAN Card verification API access, then contact Softcare
+                              Infotech Get the API now at economical rates.
+                        </p>
+
+                        <p align="justify">Softcare Infotech is one of the best Pan Card Verification API provider companies. We provide
+                             you the best Pan card verification API. You can use this Pan Card Verification API in your web portal and 
+                             provide a Pan verification service to your client. We are the Best Pan Card Verification API Provider.
+                        </p>
+                        <h5 class="bbps-h5">How the Verification Process Works?</h5>
+                        <p align="justify">Our PAN Card verification API allows you to perform an online verification process by accessing
+                             this verification website.
+                        </p>
                     </div>
                 </div>
             </div>
-            <!--<div class="row mt-5">
+            <div class="row mt-5">
                 <div class="col-md-6">
                     <div class="project-details-feature">
-                    <h5>Benefits of AEPS to Customers</h5>
+                    <h5 class="bbps-h5">Why Choose Us?</h5>
                         <ul class="list-unstyled tech-feature-list">
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Make an instant payment without Smartphones</strong></li>
+                            <strong>We provide 24X7 supports to run the customer’s business successfully.</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>PIN or Passwords are not needed</strong></li>
+                            <strong>We offer affordable and profitable APIs all over India.</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Easy to use for cashless payment</strong></li>
+                            <strong>We provide A to Z API solutions for almost every business including recharge, AEPS, 
+                            hotel and flight booking, gas and   electricity bills, movie ticket booking APIs, etc.</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong> Easily pay from any bank account that is linked with the Aadhaar Card</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong> Highly secured as it works with biometric authentications</strong></li>
-                            <strong> Cashless transaction so need to worry about cash</strong></li>
+                            <strong>  It is an economical solution than developing your own API.</strong></li>
 
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="project-details-feature">
-                    <h5>Benefits Of Using Softcare Infotech’s APIs</h5>
+                    <h5 class="bbps-h5">It gives the following results:</h5>
                         <ul class="list-unstyled tech-feature-list">
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Softcare Infotech fulfill the futuristic modern digital and online banking solutions.</strong></li>
+                            <strong>The status of the PAN Card that is maintained by NSDL.</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>One of the most reliable, quickest and trusted online banking solution providers.</strong></li>
+                            <strong>You can check whether the PAN Card is existing and valid or not. 
+                                If it is valid then it will display first, middle, and the last</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>We work with all the major and reputed banking organizations both governments as well as private.</strong></li>
+                            <strong>If the PAN is fake then the status of the Card will display FAKE PAN.</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>With our safe and quickest payment gateway we connect the rural and urban areas of India to economic development.</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Softcare Infotech trains assist and work with all the distributors to deliver the best services.</strong></li>
-                            
+                            <strong>If the PAN is not available in the database then it will display Invalid PAN.</strong></li>
                         </ul>
                     </div>
                 </div>
-            </div>-->
+            </div>
             <!--project details row end-->
         </div>
     </section>
     <!--project details section end--> <br><br>
-                <div class="col-md-12">
+             <div class="col-md-12">
                     <div class="img-wrap mb-md-4 mb-lg-0">
-                        <img src="img/api-img/banner9.jpg" alt="project" class="img-fluid rounded shadow-sm"/>
+                        <img src="img/api-img/banner5.png" alt="project" class="img-fluid rounded shadow-sm"/>
                     </div>
                 </div>
     <!--call to action section start-->

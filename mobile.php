@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Peindia API - Website Design & Development | Software & App Development </title>
+    <title>Peindia AePS Money Transfer | Micro Atm Services </title>
 </head>
 
 <body onload="myFunction()">
@@ -74,11 +74,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-7">
                     <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                        <h1 class="text-white mb-0">Money Transfer API</h1>
+                        <h1 class="text-white mb-0">Mobile API Provider</h1>
                         <div class="custom-breadcrumb">
                             <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
                                 <li class="list-inline-item breadcrumb-item"><a href="https://peindia.net.in/">Home</a></li>
-                                <li class="list-inline-item breadcrumb-item active">Money Transfer API</li>
+                                <li class="list-inline-item breadcrumb-item active">Mobile API Provider</li>
                             </ol>
                         </div>
                     </div>
@@ -91,96 +91,87 @@
     <!--project details section start-->
     <section class="project-details-section ptb-95">
         <div class="container">
-            <div class="row justify-content-between"></div>
+            <div class="row justify-content-between">             
+            </div>
             <!--project details row start-->
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="project-details-content text-color1">
-                        <h5 class="aeps-h5">Money Transfer API</h5>
-                        <p align="justify">Softcare Infotech is one of the top money transfer API service provider
-                             in India offering money transfer API to our users in all over India. Money Transfer API
-                              allows you to automate and maintain every facet of your money transfer business. It is
-                               a one stop feature rich solution and is easy to use. Our API services allow your clients
-                                to send money at any time simply by using their mobile, computer, laptop, etc. We 
-                                provide both web and app based solution for money transferring service. The major 
-                                benefit of using our API services is that it allows you to transfer money from any bank.
-                        </p>
+                        <h5 class="aeps-h5">MOBILE API</h5>
+                        <p align="justify">Mobile recharge and data packs are the sole and breathe of every person in today’s
+                             world. Softcare Infotech provide the best commission based Mobile Recharge API services that support
+                              all kinds of recharge and bill payments such as prepaid & postpaid mobile recharge, data card recharge,
+                               DTH recharge, etc. All these recharges and bill payments works with our one multi recharge API.</p>
 
-                        <p align="justify">Softcare Infotech Money Transfer API allows you transfer money instantly
-                             with IMPS technology. The money receiver will get the money in his account directly. 
-                             Money Transfer API through IMPS is one of the most demanding services in India. Become
-                              a distributor or retailer of Money transfer services with our best money transfer API 
-                              services. We also provide DMR portal to our customers.
-                        </p>
-
-                        <h5 class="bbps-h5">How It Works ?</h5>
-                        <p align="justify">The money transfer API works similar to the mobile recharge API the only
-                             difference is that the user needs to enter the account number and IFSC code of the customer
-                              and the amount that needs to transfer instead of mobile number. After submitting the information
-                               the amount will be credited to the recipients account within seconds.
-                        </p>
-
-                        <h5 class="bbps-h5">Mode Of Transferring Money</h5>
-                        <p align="justify">Softcare Infotech’s money transfer API works on two modes of payment method IMPS and NEFT.
-                             IMPS also known as immediate payment service is basically an inter-bank money transfer via electronic 
-                             mode that helps to transfer money instantly. NEFT also known as national electronic fund transfer 
-                             allows you to transfer funds electronically from any branch of the bank to any other bank’s branch.
-                        </p>
-
-                        
+                        <p align="justify">Our recharge API also response to XML that helps you to check the balance available in 
+                            your account, history of the recharge, commission you earn daily or monthly, status of recharge done, etc.
+                             Softcare Infortech is a one stop recharge API solution for all recharge services. It also works for all 
+                             service operators of both prepaid and postpaid.</p>
                     </div>
                 </div>
             </div>
-            <!--<div class="row mt-5">
+            <div class="row mt-5">
                 <div class="col-md-6">
                     <div class="project-details-feature">
-                    <h5>Benefits of AEPS to Customers</h5>
+                    <h5 class="bbps-h5">Benefits Of Mobile Recharge API</h5>
                         <ul class="list-unstyled tech-feature-list">
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Make an instant payment without Smartphones</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>PIN or Passwords are not needed</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Easy to use for cashless payment</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong> Easily pay from any bank account that is linked with the Aadhaar Card</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong> Highly secured as it works with biometric authentications</strong></li>
-                            <strong> Cashless transaction so need to worry about cash</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>It’s a quick response recharge API</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>It’s a high commissioned based recharge API</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>Approves instant fund request to recharge business owner</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong> Includes feature of fund add option via credit/debit/net banking option</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong> Fast 24/7 customer support</strong></li>
 
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="project-details-feature">
-                    <h5>Benefits Of Using Softcare Infotech’s APIs</h5>
+                    <h5 class="bbps-h5">Features Of Mobile Recharge API</h5>
                         <ul class="list-unstyled tech-feature-list">
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Softcare Infotech fulfill the futuristic modern digital and online banking solutions.</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>One of the most reliable, quickest and trusted online banking solution providers.</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>We work with all the major and reputed banking organizations both governments as well as private.</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>With our safe and quickest payment gateway we connect the rural and urban areas of India to economic development.</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Softcare Infotech trains assist and work with all the distributors to deliver the best services.</strong></li>
-                            
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>It have single wallet for all mobile operators.</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>There are no issues of minimum deposit or maintaining minimum balance</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>Recharge easily all over India</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>Provide strong database and backend support</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>Recharge hassle free with our user friendly recharge API on all networks</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>Helps to grow in telecom industry and get high margin of income with our reliable recharge API</strong></li>
+                            <li class="py-1">
+                                <span class="ti-check-box mr-2 color-secondary"></span>
+                                <strong>Our recharge API includes all mobile service operators and DTH and data card services.</strong></li>
                         </ul>
                     </div>
                 </div>
-            </div>-->
+            </div>
             <!--project details row end-->
         </div>
     </section>
     <!--project details section end--> <br><br>
-
                 <div class="col-md-12">
                     <div class="img-wrap mb-md-4 mb-lg-0">
-                        <img src="img/api-img/banner8.png" alt="project" class="img-fluid rounded shadow-sm"/>
+                        <img src="img/api-img/banner2.png" alt="project" class="img-fluid rounded shadow-sm"/>
                     </div>
-                </div>
-
+                </div>  
     <!--call to action section start-->
     <section class="call-to-action py-5 gray-light-bg">
         <div class="container">

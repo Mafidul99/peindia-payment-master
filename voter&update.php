@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Peindia API - Website Design & Development | Software & App Development </title>
+    <title>Peindia AePS Money Transfer | Micro Atm Services </title>
 </head>
 
 <body onload="myFunction()">
@@ -74,12 +74,12 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-7">
                     <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                        <h1 class="text-white mb-0">Railway Ticket API</h1>
+                        <h1 class="text-white mb-0">Voter ID Enrollment API</h1>
                         <div class="custom-breadcrumb">
                             <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
                                 <li class="list-inline-item breadcrumb-item">
                                     <a href="https://peindia.net.in/">Home</a></li>
-                                <li class="list-inline-item breadcrumb-item active">Railway Ticket Booking API</li>
+                                <li class="list-inline-item breadcrumb-item active">Voter ID Enrollment API</li>
                             </ol>
                         </div>
                     </div>
@@ -92,47 +92,71 @@
     <!--project details section start-->
     <section class="project-details-section ptb-95">
         <div class="container">
-            <div class="row justify-content-between">
-            </div>
+            <div class="row justify-content-between"></div>
 
             <!--project details row start-->
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="project-details-content text-color1">
-                        <h5 class="aeps-h5">Railway Ticket Booking API</h5>
-                        <p align="justify">Having a look at Indian Railways Reservations? Have you been one of those who simply
-                             love to traverse the train as compared to every other mode of transportation? Purchasing for bookings
-                              and confirmed seats in Indian Railways? Traveling via train is not just fun but additionally, makes 
-                              people sentimental mainly because it features its own charm and memories and it is affordable ways of transportation.
+                        <h5 class="aeps-h5">Voter ID Enrollment & Update API</h5>
+                        <p align="justify">API services benefit your business to get the best source of revenue for the development
+                         of your business. APIs help in increasing relevant traffic to your website with the help of various digital
+                          modes. Peidnia Digital being one of the best API service providers in India provides customized APIs depending
+                           upon your needs and expectations.
                               <br><br>
-                              So, to prevent everything, make sure to plan your excursion upfront and if something arises eventually minute, apply
-                               for Tatkal bookings that open a day or two beforehand based on the train and travel date.
+                              Voter ID is a crucial document in today’s era for every Indian citizen. It is basically an identity
+                            document issued by the election commission of India that can be used to verify the identity of any person.
+                             Enrolling for a voter id is quite hectic in today’s busy life. You need to stand in a big queue in the 
+                             government office to get yourself enrolled.
+                             <br><br>
+                             Also, if you already have a voter ID but facing issues with corrections and updations then also it becomes hectic.
+                             Peidnia Digital provides the best solutions to enroll yourself for voter ID with ease. We provide voter ID enrollmen
+                             t and update API services at a reasonable cost.
+                             <br><br>
+                             Now easily enroll or update your voter ID by contacting any nearby store having voter ID API to sort out all
+                              your voter ID related issues. Softcare Infotech provides the best APIs to the voter ID service provider as 
+                              per their needs. Our API services allow you to use our voter ID services all over the world by simply 
+                              reaching a service provider.
+                        </p>
+
+                        <h5 class="bbps-h4">Benefits Of Using Our API Services</h5>
+                        <p align="justify">Save your time and money for developing your own API and hiring developers by using plugins and payment gateways.
+                        </p>
+                        <h5 class="bbps-h4">Less Investment More Benefits</h5>
+                        <p align="justify">We don’t take ask for high investments or costs. Build your own B2B2C portals at a very low cost and high commissions.
+                        </p>
+                        <h5 class="bbps-h4">Expand Your Business and Income</h5>
+                        <p align="justify">Our APIs help you to increase your business in terms of both money as well as the retailer.
+                        </p>
+                        <h5 class="bbps-h4">Ready-To-Use Plugins</h5>
+                        <p align="justify">No need to develop new plugins and payment gateways because we provide the best
+                         ready-to-use plugins that are preloaded with all the essential features.
+                        </p>
+                        <h5 class="bbps-h4">Own B2B2C Portal</h5>
+                        <p align="justify">Deliver various services to your customers with our single web portal. 
+                        Become a one-stop-shop for providing the best online services to your customers.
                         </p>
                         
                     </div>
                 </div>
             </div>
-            <!--<div class="row mt-5">
+            <div class="row mt-5">
                 <div class="col-md-6">
                     <div class="project-details-feature">
-                    <h5>Benefits of AEPS to Customers</h5>
+                    <h5 class="bbps-h4">Our API services features include:</h5>
                         <ul class="list-unstyled tech-feature-list">
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Make an instant payment without Smartphones</strong></li>
+                            <strong>Easily register/modify/delete in your voter ID with our Voter ID Enrollment & Update API</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>PIN or Passwords are not needed</strong></li>
+                            <strong>Track your voter ID application status through our portal</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong>Easy to use for cashless payment</strong></li>
+                            <strong> Print and preview information on your voter ID</strong></li>
                             <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong> Easily pay from any bank account that is linked with the Aadhaar Card</strong></li>
-                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>
-                            <strong> Highly secured as it works with biometric authentications</strong></li>
-                            <strong> Cashless transaction so need to worry about cash</strong></li>
-
+                            <strong> Easily know BLO/DEO/ERO/CEO information by providing some basic details</strong></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <!--<div class="col-md-6">
                     <div class="project-details-feature">
                     <h5>Benefits Of Using Softcare Infotech’s APIs</h5>
                         <ul class="list-unstyled tech-feature-list">
@@ -149,18 +173,17 @@
                             
                         </ul>
                     </div>
-                </div>
-            </div>-->
+                </div>-->
+            </div>
             <!--project details row end-->
         </div>
     </section>
     <!--project details section end--> <br><br>
                 <div class="col-md-12">
                     <div class="img-wrap mb-md-4 mb-lg-0">
-                        <img src="img/api-img/trainbookingbanner.png" alt="project" class="img-fluid rounded shadow-sm"/>
+                        <img src="img/api-img/voteridapibanner.png" alt="project" class="img-fluid rounded shadow-sm"/>
                     </div>
                 </div>
-            
     <!--call to action section start-->
     <section class="call-to-action py-5 gray-light-bg">
         <div class="container">

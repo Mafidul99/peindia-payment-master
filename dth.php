@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Peindia API - Website Design & Development | Software & App Development </title>
+    <title>Peindia AePS Money Transfer | Micro Atm Services </title>
 </head>
 
 <body onload="myFunction()">
@@ -74,12 +74,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-7">
                     <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                        <h1 class="text-white mb-0">Aadhaar Pay API</h1>
+                        <h1 class="text-white mb-0">DTH API</h1>
                         <div class="custom-breadcrumb">
                             <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                <li class="list-inline-item breadcrumb-item">
-                                    <a href="https://peindia.net.in/">Home</a></li>
-                                <li class="list-inline-item breadcrumb-item active">Aadhaar Pay API</li>
+                                <li class="list-inline-item breadcrumb-item"><a href="https://peindia.net.in/">Home</a></li>
+                                <li class="list-inline-item breadcrumb-item active">DTH API</li>
                             </ol>
                         </div>
                     </div>
@@ -92,22 +91,52 @@
     <!--project details section start-->
     <section class="project-details-section ptb-95">
         <div class="container">
-            <div class="row justify-content-between">
-            </div>
+            <div class="row justify-content-between"></div>
+
             <!--project details row start-->
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="project-details-content text-color1">
-                        <h5 class="aeps-h5">Aadhaar Pay</h5>
-                        <p align="justify">Aadhaar Pay is an agent-assisted solution, which enables corporates to facilitate digital collections of outstanding EMI’s, processing fees, recurring bills and other sundry charges, using the customer’s Aadhaar card number and bio-metric authentication.
-                                By implementing Aadhaar Pay on field and at branches, corporate entities can avail of a number of benefits:
-                                Enable customers to transact bare pocket without a card or smart phone.
-                                Expand the number of digital EMI Collection options available to field agents
-                                Increase the penetration of cashless payments in the business
-                                Reduce risk and costs associated with cash handling
-                                Reduce TAT’s at branches
-                                Track collections digitally and seamlessly.
+                        <h5 class="aeps-h5">DTH API</h5>
+                        <p align="justify">Softcare Infotech is the top DTH Recharge API provider in India providing 
+                            DTH Recharge API services in India. Our DTH recharge API is available for all the major DTH 
+                            operators such as Dish TV, D2H, Big TV, Tata Sky, Videocon, Sun Direct, Airtel Digital TV, etc.
+                             Our API solution will provide you the access to easily recharge the DTH services online for your
+                              customers.Our entire DTH API user can add the amount in the wallet anytime from anywhere instantly. 
+                              <br><br>
+                             
+                              We provide online instant recharge solutions for DTH services of all operators.
+
                         </p>
+
+                        <h5 class="bbps-h5">How It Works?</h5>
+                        <p align="justify">We provide online instant recharge solutions for DTH services of all operators.
+                             Our API platform will allow you to place all your recharge orders online for various different
+                              operators in one single API for a vast range of cost. During the recharge process, the amount
+                               will directly be deducted from the wallet of the user. It also allows the user to check the
+                                wallet balance, earn commission, history of the recharges, and recharge status in the user’s wallet.
+
+                        </p>
+
+                        <h5 class="bbps-h5">Start Your Own Mobile, DTH Recharge Business</h5>
+                        <p align="justify">Now easily get various types of DTH Recharge API packages from Softcare Infotech.
+                             We stand apart among the other DTH Recharge API solution providers available in the latest 
+                             online solutions field. Our API gives your DTH various recharge choices amazingly affordable,
+                              just as valuable and simultaneously making no trade-offs on effectiveness. We put all endeavors
+                               for presenting the most recent mechanical patterns and that causes our DTH recharge API solutions
+                                better than expected consistently. Softcare Infotech DTH Recharge API solutions offer you in a
+                                 general sense two kinds of DTH Recharge choices; one is named as Basic DTH Recharge solutions 
+                                 and the other is the Business DTH Recharge solutions.
+                        </p>
+
+                        <h5 class="bbps-h5">Master Recharge API</h5>
+                        <p align="justify">Softcare Infotech also provides Master Mobile Recharge API in India. If you are looking
+                             for any API master recharge API then reach us. With our master API, the user can start their own 
+                             recharge API business in India. This allows you to integrate multiple APIs in a single system and 
+                             the API administrator can switch these API easily among the operators.
+
+                        </p>
+
                         
                     </div>
                 </div>
@@ -154,14 +183,12 @@
             <!--project details row end-->
         </div>
     </section>
-    <!--project details section end-->
-    <br><br>
+    <!--project details section end--><br><br>
                 <div class="col-md-12">
                     <div class="img-wrap mb-md-4 mb-lg-0">
-                        <img src="img/api-img/banner6.png" alt="project" class="img-fluid rounded shadow-sm"/>
+                        <img src="img/api-img/banner2.png" alt="project" class="img-fluid rounded shadow-sm"/>
                     </div>
                 </div>
-
     <!--call to action section start-->
     <section class="call-to-action py-5 gray-light-bg">
         <div class="container">

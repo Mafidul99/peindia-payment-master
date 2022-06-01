@@ -84,7 +84,7 @@
                     <div class="col-md-12 col-lg-5">
                         <div class="hero-slider-content text-white pt-5">
                             <strong>Website & Software Development</strong>
-                            <h1 class="text-white">Peindia API Platform Buy Unlimited API</h1>
+                            <h1 class="text-white">Peindia Banking Platform Buy Unlimited Banking Services</h1>
                             <p class="lead">Grow your bussiness online and make it visible globally. Launch your website with elegant design in wallet friendly price. </p>
 
                             <div class="action-btns mt-3">
@@ -467,7 +467,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>AEPS API</h5>
+                                    <h5>AEPS </h5>
                                     <p>Aadhaar Enabled Payment System, app or Digital Payments.</p>
                                 </div>
                             </div>
@@ -495,7 +495,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>MICRO ATM API</h5>
+                                    <h5>MICRO ATM </h5>
                                     <p>Micro ATM can do a lot with additional cash withdrawal & deposit features.</p>
                                 </div>
                             </div>
@@ -516,7 +516,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>DMT API</h5>
+                                    <h5>DMT </h5>
                                     <p>Domestic Money Transfer, IMPS/NEFT supported bank account in India.</p>
                                 </div>
                             </div>
@@ -544,8 +544,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>BBPS API</h5>
-                                    <p>Bharat Bill Payment System is an integrated bill payment system in India. </p>
+                                    <h5>IRCTC </h5>
+                                    <p>Indian Railway Catering and Tourism Corporation is an Indian. </p>
                                 </div>
                             </div>
                             <div class="process-line-r"></div>
@@ -566,8 +566,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>ALL RECHARGE API</h5>
-                                    <p>Mobile and DTH services instantly with our online Mobile and DTH Recharge portal. </p>
+                                    <h5>Suryoday Bank CSP</h5>
+                                    <p>Suryoday Small Finance Bank Ltd. CIN No: L65923MH2008PLC261472. </p>
                                 </div>
                             </div>
                             <div class="process-line-l"></div>
@@ -773,7 +773,9 @@
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="client-para">
-                            <p align="justify">Our core technical developer team always look into latest technology and suggest our client for best technology or platform which will be best as per their requirement and budget. We always focus on quality of design and our
+                            <p align="justify">Our core technical developer team always look into latest technology and
+                                 suggest our client for best technology or platform which will be best as per their requirement 
+                                 and budget. We always focus on quality of design and our
                                 after support services. We have dedicated developer for these technologies. </p>
                         </div>
                     </div>

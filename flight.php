@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Peindia API - Website Design & Development | Software & App Development </title>
+    <title>Peindia AePS Money Transfer | Micro Atm Services </title>
 </head>
 
 <body onload="myFunction()">
@@ -74,11 +74,12 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-7">
                     <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                        <h1 class="text-white mb-0">DTH API</h1>
+                        <h1 class="text-white mb-0">Flight & Hotel API</h1>
                         <div class="custom-breadcrumb">
                             <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                <li class="list-inline-item breadcrumb-item"><a href="https://peindia.net.in/">Home</a></li>
-                                <li class="list-inline-item breadcrumb-item active">DTH API</li>
+                                <li class="list-inline-item breadcrumb-item">
+                                    <a href="https://peindia.net.in/">Home</a></li>
+                                <li class="list-inline-item breadcrumb-item active">Flight & Hotel Booking API</li>
                             </ol>
                         </div>
                     </div>
@@ -97,46 +98,46 @@
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="project-details-content text-color1">
-                        <h5 class="aeps-h5">DTH API</h5>
-                        <p align="justify">Softcare Infotech is the top DTH Recharge API provider in India providing 
-                            DTH Recharge API services in India. Our DTH recharge API is available for all the major DTH 
-                            operators such as Dish TV, D2H, Big TV, Tata Sky, Videocon, Sun Direct, Airtel Digital TV, etc.
-                             Our API solution will provide you the access to easily recharge the DTH services online for your
-                              customers.Our entire DTH API user can add the amount in the wallet anytime from anywhere instantly. 
+                        <h5 class="aeps-h5">Flight & Hotel Booking API</h5>
+                        <p align="justify">Peindia Digital is one of the best Flight and Hotel booking API providers in India that 
+                        give rise to travel business by providing the best travel services in terms of booking, transactions, cancellations, 
+                        etc.Flight and Hotel booking API services are a one-stop entire travel technology solution for the tourism industry.
                               <br><br>
-                             
-                              We provide online instant recharge solutions for DTH services of all operators.
-
+                              In the modern era where everything is available online, people feel more comfortable
+                                purchasing products and services online. For this comfort of the customers, our flight
+                                 booking API services allow the traveler to book tickets online with the comfort of their home.
+                                  This also plays a crucial role in the airline's business to increase revenue easily.
+                                  <br><br>
+                                Peindia Digital provides APIs that are compatible with every device either a Smartphone or 
+                                laptop or PC. With the utilization of the latest technologies, our APIs are developed to adjust the 
+                                display layout to fit any screen size.
+                                  <br><br>
+                                Connect with your customers all over the world using our best API services in India. 
+                                Peindia Digital API integration allows you to connect your customers in a very easy 
+                                and better way. Our API services are suitable for all businesses from a small shop owner
+                                 to a large enterprise. Delivering the best services all over India we are called one of
+                                  the best API service providers in India providing high-quality services at economical rates.
+                                   Contact now and get your API immediately.
                         </p>
 
-                        <h5 class="bbps-h5">How It Works?</h5>
-                        <p align="justify">We provide online instant recharge solutions for DTH services of all operators.
-                             Our API platform will allow you to place all your recharge orders online for various different
-                              operators in one single API for a vast range of cost. During the recharge process, the amount
-                               will directly be deducted from the wallet of the user. It also allows the user to check the
-                                wallet balance, earn commission, history of the recharges, and recharge status in the user’s wallet.
-
+                        <h5 class="bbps-h4">Benefits Of Using Softcare Infotech APIs</h5>
+                        <p align="justify">High-Class Services
+                                            <br>
+                                Get top services with our high-quality APIs at an affordable cost.
                         </p>
 
-                        <h5 class="bbps-h5">Start Your Own Mobile, DTH Recharge Business</h5>
-                        <p align="justify">Now easily get various types of DTH Recharge API packages from Softcare Infotech.
-                             We stand apart among the other DTH Recharge API solution providers available in the latest 
-                             online solutions field. Our API gives your DTH various recharge choices amazingly affordable,
-                              just as valuable and simultaneously making no trade-offs on effectiveness. We put all endeavors
-                               for presenting the most recent mechanical patterns and that causes our DTH recharge API solutions
-                                better than expected consistently. Softcare Infotech DTH Recharge API solutions offer you in a
-                                 general sense two kinds of DTH Recharge choices; one is named as Basic DTH Recharge solutions 
-                                 and the other is the Business DTH Recharge solutions.
+                        <h5 class="bbps-h4">Flexible Business Hours</h5>
+                        <p align="justify">Now easily book, modify, and cancel your bookings at any time. We are available 24X7, 365 days.
                         </p>
-
-                        <h5 class="bbps-h5">Master Recharge API</h5>
-                        <p align="justify">Softcare Infotech also provides Master Mobile Recharge API in India. If you are looking
-                             for any API master recharge API then reach us. With our master API, the user can start their own 
-                             recharge API business in India. This allows you to integrate multiple APIs in a single system and 
-                             the API administrator can switch these API easily among the operators.
-
+                        <h5 class="bbps-h4">Customized Solutions</h5>
+                        <p align="justify">We customize the APIs according to the client’s requirement that turns a maximum profit from your website.
                         </p>
-
+                        <h5 class="bbps-h4">Experienced Team</h5>
+                        <p align="justify">We have a well-qualified and certified team of experienced professionals for delivering top-notch quality of services.
+                        </p>
+                        <h5 class="bbps-h4">Vast Features</h5>
+                        <p align="justify">Our vast and latest features serve all kinds of businesses including retail, corporate, tour operators, or travel agents.
+                        </p>
                         
                     </div>
                 </div>
@@ -183,10 +184,10 @@
             <!--project details row end-->
         </div>
     </section>
-    <!--project details section end--><br><br>
+    <!--project details section end--> <br><br>
                 <div class="col-md-12">
                     <div class="img-wrap mb-md-4 mb-lg-0">
-                        <img src="img/api-img/banner2.png" alt="project" class="img-fluid rounded shadow-sm"/>
+                        <img src="img/api-img/Flight&Hotel.png" alt="project" class="img-fluid rounded shadow-sm"/>
                     </div>
                 </div>
     <!--call to action section start-->

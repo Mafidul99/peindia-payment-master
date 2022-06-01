@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">                
                 <ul class="navbar-nav ml-auto menu">
                     <li><a href="https://peindia.net.in/">Home</a></li>                    
-                    <li><a href="#" class="dropdown-toggle"> Services</a>
+                    <li><a href="#" class="dropdown-toggle">Govt. Services</a>
                         <ul class="sub-menu">
                             <li><a href="nsdl-csp.php">Business Proposal For NSDL CSP</a></li>
                             <li><a href="website-design-and-development-in-guwahati.php">Website Development</a></li>
@@ -20,20 +20,20 @@
                             <li><a href="digital-marketing-in-guwahati.php">Digital Marketing</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="dropdown-toggle"> API</a>
+                    <li><a href="#" class="dropdown-toggle"> All Services</a>
                         <ul class="sub-menu">
-                            <li><a href="aeps-api.php">ICICI Bank AEPS API</a></li>
-                            <li><a href="dmt-api.php">Money Transfer API</a></li>
-                            <li><a href="bbps-api.php">Electricity & Gas Bill API</a></li>
-                            <li><a href="dth-api.php">DTH API</a></li>
-                            <li><a href="pan-api.php">Pan Card API</a></li>
-                            <li><a href="sms-api.php">Bulk SMS API</a></li>
-                            <li><a href="micro-atm-api.php">Micro ATM API</a></li>
-                            <li><a href="mobile-api.php">Mobile API</a></li>
-                            <li><a href="flight-api.php">Flight Booking API</a></li>
-                            <li><a href="voter&update-api.php">Voter ID Enrollment API</a></li>
-                            <li><a href="aadhaar-pay-api.php">Aadhaar Pay API</a></li>
-                            <li><a href="irctc-api.php">Railway Ticket Booking API</a></li>                            
+                            <li><a href="aeps.php">ICICI Bank AEPS</a></li>
+                            <li><a href="dmt.php">Money Transfer</a></li>
+                            <li><a href="bbps.php">Electricity & Gas Bill</a></li>
+                            <li><a href="dth.php">DTH</a></li>
+                            <li><a href="pan.php">Pan Card</a></li>
+                            <li><a href="sms.php">Bulk SMS</a></li>
+                            <li><a href="micro-atm.php">Micro ATM</a></li>
+                            <li><a href="mobile.php">Mobile</a></li>
+                            <li><a href="flight.php">Flight Booking</a></li>
+                            <li><a href="voter&update.php">Voter ID Enrollment</a></li>
+                            <li><a href="aadhaar-pay.php">Aadhaar Pay</a></li>
+                            <li><a href="irctc.php">Railway Ticket Booking</a></li>                            
                         </ul>
                     </li>
                     <li><a href="#" class="dropdown-toggle"> ATM</a>

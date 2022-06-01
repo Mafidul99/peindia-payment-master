@@ -43,7 +43,7 @@
                                         <a class="nav-link" href="about-us.php">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://peindiacab.in/" target="_blank">Cab Service</a>
+                                        <a class="nav-link" href="https://peindia.cab/" target="_blank">Cab Service</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#" target="_blank">CSC Academy</a>
@@ -53,6 +53,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="nsdl-csp.php">NSDL CSP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">Suryoday Bank CSP</a>
                                     </li>
                                 </ul>
 
