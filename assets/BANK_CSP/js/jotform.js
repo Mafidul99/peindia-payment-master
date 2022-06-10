@@ -784,11 +784,21 @@ var JotForm = {
                 this.getServerURL();
 
                 this.checkJSON();
-
+                
                 if (callback) {
-                    callback();
+                    /**
+                     * When callback function threw an error
+                     * all init function stopped to functioning.
+                     * To avoid this behaviour,
+                     * callback function has been wrapped by a try/catch block
+                     */
+                    try {
+                        callback();
+                    } catch (error) {
+                        console.log(error)
+                    }
                 }
-
+                
                 if (window.location.href.indexOf("/edit/") !== -1) { 
                    var urlParts = window.location.href.split("/");
                    //  Submission ID should be given after "edit"
@@ -809,7 +819,6 @@ var JotForm = {
                 this.handleSavedForm();
                 this.setHTMLClass();
                 this.getDefaults();
-
                 if(this.noJump) {
                     window.parent.postMessage("removeIframeOnloadAttr", '*');
                 }
@@ -904,7 +913,6 @@ var JotForm = {
                 if ($$('.paypal-button').length > 0 && $('use_paypal_button')) {
                     this.handlePaypalButtons();
                 }
-
                 this.handleFormCollapse();
                 this.handlePages();
                 this.checkEmbed();
@@ -1012,6 +1020,18 @@ var JotForm = {
                 this.runAllCalculations();
                 this.setCalculationResultReadOnly();
                 this.prePopulations();
+
+                JotForm.onTranslationsFetch(function () {
+                    if (document.createEvent) {
+                        try {
+                            var event = new CustomEvent('PrepopulationCompleted');
+                            document.dispatchEvent(event);
+                        } catch (error) {
+                            console.log(error);
+                        }
+                    }
+                });
+
                 this.handleSSOPrefill();
                 this.handleAutoCompletes();
                 this.handleTextareaLimits();
@@ -1224,6 +1244,9 @@ var JotForm = {
                     var form = document.querySelector('.jotform-form');
                     var fileServer = new Element('input', { id: 'file_server', type: 'hidden', name: 'file_server', value: 'hipaa-app1' });
                     form.appendChild(fileServer);
+
+                    var targetEnv = new Element('input', { id: 'target_env', type: 'hidden', name: 'target_env', value: 'hipaa' });
+                    form.appendChild(targetEnv);
                 }
 
                 // Campaign Injection
@@ -2946,20 +2969,21 @@ var JotForm = {
      */
     setDateTimeFieldItem: function (fieldItem, qid) {
         var isHourOrMin = fieldItem.key === 'hour' || fieldItem.key === 'min';
-        var value = isHourOrMin ? parseInt(fieldItem.value) : fieldItem.value;
+        var value = fieldItem.value;
         var element;
         if (isHourOrMin) {
             var _key = fieldItem.key === 'hour' ? 'hour' : 'minute';
             var hourOrMinEl = document.querySelector('#input_' + qid + '_' + _key + 'Select');
             if (hourOrMinEl) {
-                hourOrMinEl.value = value;
+                hourOrMinEl.value = value < 10 ? '0' + value : value;
             }
         }
+        var timeInputElement = $("input_" + qid + "_" + fieldItem.key)
         if($(fieldItem.key + "_" + qid)) {
             element = $(fieldItem.key + "_" + qid);
             element.value = value;
-        } else if (JotForm.newDefaultTheme && $("input_" + qid + "_" + fieldItem.key)) {
-            element = $("input_" + qid + "_" + fieldItem.key);
+        } else if (timeInputElement && (JotForm.newDefaultTheme || timeInputElement.dataset.version === "v2")) {
+            element = timeInputElement;
             element.value = value;
         }
         var elementIsSelect = element && element.nodeName === 'SELECT';
@@ -6158,21 +6182,25 @@ var JotForm = {
         } else if (condition.type == 'url') {
             return (condition.link.toLowerCase() == 'any' && any) || (condition.link.toLowerCase() == 'all' && all);
         } else { // Page condition
-
+            var isConditionValid = (condition.link.toLowerCase() == 'any' && any) || (condition.link.toLowerCase() == 'all' && all);
             if($A(condition.action).length > 0 && condition.action.first().skipHide === 'hidePage') {
                 var action = condition.action.first();
 
                 if (window.FORM_MODE == 'cardform') {
-                  if ((condition.link.toLowerCase() == 'any' && any) || (condition.link.toLowerCase() == 'all' && all)) {
+                  if (isConditionValid) {
                     JotForm.hideField(action.skipTo);
                   } else {
                     JotForm.showField(action.skipTo);
                   }
                 } else {
-                  if ((condition.link.toLowerCase() == 'any' && any) || (condition.link.toLowerCase() == 'all' && all)) {
-                    JotForm.hidePages[parseInt(action.skipTo.replace('page-', ''), 10)] = true;
+                  var pageNumber=parseInt(action.skipTo.replace('page-', ''), 10);
+                  if (isConditionValid) {
+                      if (!JotForm.hidePages[pageNumber]) {
+                        JotForm.hidePages[pageNumber] = {};
+                      }
+                      JotForm.hidePages[pageNumber][condition.id] = true;
                   } else {
-                    JotForm.hidePages[parseInt(action.skipTo.replace('page-', ''), 10)] = false;
+                      JotForm.hidePages[pageNumber] && delete JotForm.hidePages[pageNumber][condition.id];
                   }
                 }
                 return;
@@ -6213,7 +6241,6 @@ var JotForm = {
                 sections = $$('.form-all > .page-section');
             }
 
-            var isConditionValid = (condition.link.toLowerCase() == 'any' && any) || (condition.link.toLowerCase() == 'all' && all);
 
             if (window.FORM_MODE == 'cardform' && !isConditionValid) {
                 for(var i = nextQuestionIndex; i < allQuestions.length; i++) {
@@ -6582,7 +6609,7 @@ var JotForm = {
                         });
                         break;
                     case 'INPUT':
-                        if ((['checkbox', 'radio'].include(input.type) && !input.checked) || input.type === 'file'
+                        if (['checkbox', 'radio'].include(input.type) || input.type === 'file'
                             || (['year_' + qid, 'month_' + qid, 'day_' + qid, 'lite_mode_' + qid ]).include(input.id) || (input.getAttribute('data-type') === 'input-spinner'))
                         {
                             input.disable();
@@ -8138,6 +8165,25 @@ var JotForm = {
                 var sources = $$('#id_'+calc.operands+' input[type="checkbox"]:checked');
 
                 var outputs = sources.length ? sources.collect(function(out){
+                    /**
+                     * Check if there is data-calcvalue attribute within the target element
+                     */
+                    var dataCalcValue = out.getAttribute('data-calcvalue')
+
+                    /**
+                     * If element has data-calcvalue attribute then return it,
+                     * so value of the attribute can be pushed to the array called outputs.
+                     * Because outputs array's elements will be used to be checked or unchecked
+                     * somewhere in the following lines.
+                     */
+                    if(dataCalcValue){
+                        return dataCalcValue
+                    }
+
+                    /**
+                     * If element hasn't data-calcvalue,
+                     * then use value attribute instead.
+                     */
                   return out.value.strip();
                 }) : output.strip();
 
@@ -8263,7 +8309,11 @@ var JotForm = {
                     }
 
                     if ($('input_' + result)) {
-                      $('input_' + result).value = output;
+                        if ((calc.equation === '0' || calc.equation === '[0]') && resultFieldType === 'text') {
+                            $('input_' + result).value = '0';
+                        } else {
+                            $('input_' + result).value = output;
+                        }
                     }
 
                     if ( $('input_' + result) && output && output.length === 0 && $('input_' + result).hintClear) { //IE8&9 if value is empty reapply hint
@@ -8955,6 +9005,12 @@ var JotForm = {
         ) {
             return false;
         }
+
+        // Jotform Store Builder selected product control
+        if (window.paymentType === 'product' && (window.JFAppsManager && window.JFAppsManager.checkoutKey && window.JFAppsManager.cartProductItemCount > 0)) {
+            return true;
+        }
+
         // if this is a multi-item product or subscription
         if (window.productID) {
             // check if at least one product is selected
@@ -10154,6 +10210,14 @@ var JotForm = {
             total = "0.00";
             totalWithoutDiscount = "0.00";
         }
+
+        // Gets the amount by checking the number of products added to the cart for Jotform Store Builder
+        if (
+            (total === 0 || total === "0.00" || isNaN(total)) && (window.JFAppsManager && window.JFAppsManager.checkoutKey && window.JFAppsManager.cartTotal > 0)
+        ) {
+            total = window.JFAppsManager.cartTotal;
+        }
+
         // if there is a shipping discount
         if (JotForm.discounts.shipping && shippingTotal > 0 && subTotal >= minimum) {
             var reduce = type === "fixed" ? rate : (rate / 100) * parseFloat(shippingTotal);
@@ -11867,6 +11931,7 @@ var JotForm = {
                 var imask = new Inputmask({
                     alias: 'datetime',
                     inputFormat: inputs[i].dataset.mask ? inputs[i].dataset.mask : 'hh:MM',
+                    inputEventOnly: true,
                     jitMasking: true,
                     oncomplete: dateTimeOnComplete,
                     onincomplete: function (e) {
@@ -12005,6 +12070,7 @@ var JotForm = {
                 var imask = new Inputmask({
                     alias: 'datetime',
                     inputFormat: dateFormat,
+                    inputEventOnly: true,
                     placeholder: liteModeInputs[i].placeholder,
                     oncomplete: function (e) {
                         var splittedDateFormat = dateFormat.split(dateSeperator);
@@ -12515,7 +12581,7 @@ var JotForm = {
                     if(!JotForm.nextPage) {
                         var sections = $$('.form-all > .page-section');
                         for(var i=sections.indexOf(section); i<sections.length; i++) {
-                            if(JotForm.hidePages[parseInt(i, 10)+2] === true) {
+                            if(JotForm.hidePages[parseInt(i, 10)+2] && Object.keys(JotForm.hidePages[parseInt(i, 10)+2]).length >0) {
                                 continue;
                             }
                             JotForm.nextPage = sections[parseInt(i, 10)+1];
@@ -12604,7 +12670,7 @@ var JotForm = {
                 var prevPage = JotForm.backStack.pop();
                 while(JotForm.backStack.length > 0) {
                     var pageNumber = sections.indexOf(prevPage) + 1;
-                    if(JotForm.hidePages[pageNumber] === true) {
+                    if(JotForm.hidePages[pageNumber] && Object.keys(JotForm.hidePages[pageNumber]).length > 0 ) {
                         prevPage = JotForm.backStack.pop();
                         continue;
                     }
@@ -13761,10 +13827,13 @@ var JotForm = {
         //}
         insertEl.select('.form-error-message').invoke('remove');
 
+        error_message_span = new Element('span', {className: 'error-navigation-message'});
+        error_message_span.innerText= message;
+
         insertEl.insert(new Element('div', {
             className: 'form-error-message',
             role: 'alert'
-        }).insert('<img src="' + preLink + 'images/exclamation-octagon.png"> ' + message).insert(
+        }).insert('<img src="' + preLink + 'images/exclamation-octagon.png"> ').insert(error_message_span).insert(
             new Element('div', {className: 'form-error-arrow'}).insert(new Element('div', {className: 'form-error-arrow-inner'}))));
 
         JotForm.iframeHeightCaller();
@@ -13959,7 +14028,17 @@ var JotForm = {
             }
         }
     },
+    removeNonselectedProducts: function(form) {
+      // BUGFIX#3928437
+      // Remove nonselected products (new payment UI) to bypass max_input_vars (3000 limit)
 
+      var nonSelectedProducts = form.querySelectorAll('.form-product-item.new_ui:not(.p_selected)');
+      if (!(nonSelectedProducts.length > 0)) { return; }
+
+      nonSelectedProducts.forEach(function(node) {
+        node.parentNode.removeChild(node)
+      });
+    },
     /**
      * Sets all validations to forms
      */
@@ -14222,6 +14301,10 @@ var JotForm = {
                             input.clear();
                         }
                     });
+                }
+                var numberOfInputs = form.querySelectorAll('.form-all input, select').length;
+                if (numberOfInputs > 3000){ // to bypass max_input_vars - 3000 limit
+                  JotForm.removeNonselectedProducts(form);
                 }
 
                 if (JotForm.compact && JotForm.imageSaved == false) {
@@ -17515,7 +17598,7 @@ var JotForm = {
                 }
             });
             JotForm.prePopulations(data);
-            dispatchCompletedEvent();
+            JotForm.onTranslationsFetch(dispatchCompletedEvent());
         }, function(err) {
             console.log(err);
             dispatchCompletedEvent();

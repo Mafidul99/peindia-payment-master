@@ -1084,7 +1084,7 @@ var Enumerable = (function() {
     reject:     reject,
     sortBy:     sortBy,
     toArray:    toArray,
-    entries:    toArray,
+   // entries:    toArray,
     zip:        zip,
     size:       size,
     inspect:    inspect,
@@ -1114,7 +1114,9 @@ function $w(string) {
   return string ? string.split(/\s+/) : [];
 }
 
-Array.from = $A;
+if (!Array.from) {
+  Array.from = $A;
+}
 
 
 (function() {
@@ -1402,9 +1404,9 @@ Array.from = $A;
   // Enumerable's `entries` method is no longer safe to mixin to arrays, as
   // it conflicts with an ES6 method. But it can still be mixed into other
   // things.
-  if (arrayProto.entries === Enumerable.entries) {
-    delete arrayProto.entries;
-  }
+  // if (arrayProto.entries === Enumerable.entries) {
+    // delete arrayProto.entries;
+  // }
 
   if (!arrayProto._reverse)
     arrayProto._reverse = arrayProto.reverse;

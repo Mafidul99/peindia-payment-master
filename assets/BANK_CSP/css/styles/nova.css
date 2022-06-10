@@ -822,7 +822,10 @@ div[render-paypal-type="paypal-smart-buttons"] .content-area {
 .payment-apm-list .payment-method-container img {
 	position: absolute;
 	left: 45px;
-	top: 11px
+	top: 11px;
+	width: 28px;
+	height: 20px;
+	border-radius: 3px;
 }
 
 .payment-apm-list .payment-method-container  .form-radio+label{
