@@ -361,6 +361,12 @@ b {
 }
 
 .gradient-bg {
+    /*background: linear-gradient(75deg, #093986 10%, #093986) !important;*/
+    background: url(../img/main-banner1.jpg);
+    background-repeat: no-repeat;
+}
+
+.gradient-bg2 {
     background: linear-gradient(75deg, #093986 10%, #093986) !important;
 }
 
@@ -496,19 +502,19 @@ a:hover {
 }
 
 .secondary-solid-btn3 {
-    color: #F39614;
+    color: #ffffff;
     font-size: 18px;
     padding: 12px 17px;
-    background: transparent !important;
-    border: 1px solid #F39614;
+    background: #307e03 !important;
+    border: 1px solid #020202;
 }
 
 .secondary-solid-btn3:hover {
     background: transparent !important;
-    color: #ffffff;
+    color: #000000;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
 }
 
 .secondary-outline-btn {

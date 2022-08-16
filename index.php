@@ -82,10 +82,11 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-12 col-lg-5">
-                        <div class="hero-slider-content text-white pt-5">
+                        <div class="hero-slider-content text-black pt-5">
                             <strong>Website & Software Development</strong>
-                            <h1 class="text-white">Peindia Banking Platform Buy Unlimited Banking Services</h1>
-                            <p class="lead">Grow your bussiness online and make it visible globally. Launch your website with elegant design in wallet friendly price. </p>
+                            <h1 class="text-black">Peindia Banking Platform Buy Unlimited Banking Services</h1>
+                            <p class="lead">Grow your bussiness online and make it visible globally.
+                                 Launch your website with elegant design in wallet friendly price. </p>
 
                             <div class="action-btns mt-3">
                                 <a href="onlineRegis.php" class="btn secondary-solid-btn3">Online Registration Form</a> 
@@ -95,7 +96,7 @@
                     </div>
                     <div class="col-md-12 col-lg-7">
                         <div class="image-wrap pt-5">
-                            <img src="img/Banner/restapi11.png" class="img-fluid custom-width" sizes="12px*12px" alt="hero" />
+                            <img src="img/Banner/restapi200.png" class="img-fluid custom-width" sizes="10px*12px" alt="hero" />
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 <!--footer section start-->
 <footer class="footer-section">
     <!--footer top start-->
-    <div class="footer-top gradient-bg">
+    <div class="footer-top gradient-bg2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-9">
