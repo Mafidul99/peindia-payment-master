@@ -50,11 +50,5 @@
                 </ul>                
             </div>            
         </div>
-            <ul>
-                <li>
-                    <a href="assets/New_Bank_CSP_2022/index.php" target="_blank" class="btn btn-info check-btn"> 
-                        <img src="image/click.gif" width=22px height=22px> CSP APPLY</a>
-                </li>
-            </ul>
     </nav>
     </header>
