@@ -27,7 +27,7 @@ try{
 	$mail->Port = '465';
 
 	$mail->setFrom('mailsupport@peindia.net.in'); // Gmail address which you want to use as STMP server//
-	$mail->addAddress('peindiapay@hotmail.com');
+	$mail->addAddress('peindiacsp@gmail.com');
 
 	$mail->isHTML(true);
 	$mail->Subject = "Contact Us From Peindia Payments";

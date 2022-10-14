@@ -1,7 +1,7 @@
 <!--footer section start-->
 <footer class="footer-section">
     <!--footer top start-->
-    <div class="footer-top gradient-bg">
+    <div class="footer-top gradient-bg2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-9">
@@ -43,7 +43,7 @@
                                         <a class="nav-link" href="about-us.php">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://peindiacab.in/" target="_blank">Cab Service</a>
+                                        <a class="nav-link" href="https://peindia.cab/" target="_blank">Cab Service</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#" target="_blank">CSC Academy</a>
@@ -53,6 +53,9 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="nsdl-csp.php">NSDL CSP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">Suryoday Bank CSP</a>
                                     </li>
                                 </ul>
 
@@ -156,24 +159,43 @@
 <script src="js/mainloading.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
-
-<!--Start of Tawk.to Script-->
+<!--Add the following script at the bottom of the web page (before </body></html>)-->
+<!--Add the following script at the bottom of the web page (before </body></html>)-->
 <script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/60ab98e5bbd5354c0fdbcb47/1f6f4qhf6';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
+function add_chatinline(){var hccid=54172059;
+    var nt=document.createElement("script");
+    nt.async=true;
+    nt.src="https://www.mylivechat.com/chatinline.aspx?hccid="+hccid;
+    var ct=document.getElementsByTagName("script")[0];
+    ct.parentNode.insertBefore(nt,ct);}
+add_chatinline();</script>
 <!--End of Tawk.to Script-->
 <!--modal popup start-->
-
+<!--<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title texthead" id="exampleModalLabel">SURYODAY BANK</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center addptext">Peindia Payments CSP Provider!</p>
+                <iframe width="460" height="315" src="https://www.youtube.com/embed/j4bRexj6VJc" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                <!-<a href="https://www.youtube.com/watch?v=j4bRexj6VJc">
+                    <img width="470" height="auto" src="image/bankadd.JPG" alt="bankadd.JPG"></a>
+            </div>
+            <div class="modal-footer">
+                <img src="image/click.gif" width=40px height=40px>
+                <a class="text-center btn btn-primary" href="assets/BANK_CSP/SURYODAY_BANK_CSP.html" target="_blank">CSP Apply Now</a>
+                <!-<button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>-->
 <!--modal popup end-->
 <script>
     $(document).ready(function() {

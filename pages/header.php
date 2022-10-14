@@ -13,7 +13,6 @@
                     <li><a href="https://peindia.net.in/">Home</a></li>                    
                     <li><a href="#" class="dropdown-toggle">Govt. Services</a>
                         <ul class="sub-menu">
-                            <li><a href="nsdl-csp.php">Business Proposal For NSDL CSP</a></li>
                             <li><a href="website-design-and-development-in-guwahati.php">Website Development</a></li>
                             <li><a href="software-development-in-guwahati.php">Software Development</a></li>
                             <li><a href="mobile-application-development-in-guwahati.php">Mobile Application</a></li>
@@ -22,7 +21,6 @@
                     </li>
                     <li><a href="#" class="dropdown-toggle"> All Services</a>
                         <ul class="sub-menu">
-                            <li><a href="aeps.php">ICICI Bank AEPS</a></li>
                             <li><a href="dmt.php">Money Transfer</a></li>
                             <li><a href="bbps.php">Electricity & Gas Bill</a></li>
                             <li><a href="dth.php">DTH</a></li>
@@ -38,15 +36,14 @@
                     </li>
                     <li><a href="#" class="dropdown-toggle"> ATM</a>
                         <ul class="sub-menu">
-                            <li><a href="#">Hitachi ATM</a></li>
-                            <li><a href="#">Hitachi CRM</a></li>
                             <li><a href="#">Android POS </a></li>
                             <li><a href="#">MICRO ATM</a></li>
                         </ul>
                     </li>
                     <li><a href="about-us.php">About Us</a></li>
                     <li><a href="contact-us.php">Contact Us</a></li>                    
-                    <li><a href="https://api.peindia.net.in/login/" target="_blank" class="btn secondary-solid-btn check-btn"> Login</a>
+                    <li><a href="https://api.peindia.net.in/login/" target="_blank" 
+                    class="btn secondary-solid-btn check-btn"> Login</a>
                     </ul>
                     </li>
                     </li>
@@ -55,8 +52,8 @@
         </div>
             <ul>
                 <li>
-                    <a href="assets/BANK_CSP/SURYODAY_BANK_CSP.html" target="_blank" class="btn btn-info check-btn"> 
-                        <img src="image/click.gif" width=22px height=22px> CSP Apply</a>
+                    <a href="assets/New_Bank_CSP_2022/index.php" target="_blank" class="btn btn-info check-btn"> 
+                        <img src="image/click.gif" width=22px height=22px> CSP APPLY</a>
                 </li>
             </ul>
     </nav>

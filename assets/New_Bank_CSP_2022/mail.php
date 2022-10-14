@@ -1,74 +1,86 @@
 <?php
-$message = '';
-if (isset($_POST["submit"])) {
-    $skills = '';
-    foreach ($_POST["skills"] as $row) {
-        $skills .= $row . ', ';
-    }
-    $skills = substr($skills, 0, -2);
-    $path = 'upload/' . $_FILES["resume"]["name"];
-    move_uploaded_file($_FILES["resume"]["tmp_name"], $path);
-    $message = '
-		<h3 align="center">Applicant Details</h3>
-		<table border="1" width="100%" cellpadding="5" cellspacing="5">
-			<tr>
-				<td width="30%">Name</td>
-				<td width="70%">' . $_POST["name"] . '</td>
-			</tr>
-			<tr>
-				<td width="30%">Address</td>
-				<td width="70%">' . $_POST["address"] . '</td>
-			</tr>
-			<tr>
-				<td width="30%">Email Address</td>
-				<td width="70%">' . $_POST["email"] . '</td>
-			</tr>
-			<tr>
-				<td width="30%">Area of Interest</td>
-				<td width="70%">' . $skills . '</td>
-			</tr>
-			<tr>
-				<td width="30%">Experience Year</td>
-				<td width="70%">' . $_POST["experience"] . '</td>
-			</tr>
-			<tr>
-				<td width="30%">Phone Number</td>
-				<td width="70%">' . $_POST["mobile"] . '</td>
-			</tr>
-			<tr>
-				<td width="30%">Additional Information</td>
-				<td width="70%">' . $_POST["additional_information"] . '</td>
-			</tr>
-		</table>
-	';
+session_start();
+use PHPMailer\PHPMailer\PHPMailer;
 
-    require 'class/class.phpmailer.php';
-    $mail = new PHPMailer;
-    $mail->IsSMTP();                                //Sets Mailer to send message using SMTP
+require_once 'phpmailer/Exception.php';
+require_once 'phpmailer/PHPMailer.php';
+require_once 'phpmailer/SMTP.php';
+
+$mail = new PHPMailer(true);
+
+//$alert = '';
+
+	if(isset($_POST['submit'])) {		
+	$name = $_POST['name'];
+	$fname = $_POST['fname'];
+	$mname = $_POST['mname'];	
+	$gender = $_POST['gender'];	
+	$dateofbrith = $_POST['dateofbrith'];	
+	$aadhaar = $_POST['aadhaar'];
+	$pan = $_POST['pan'];	
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$adhadd = $_POST['adhadd'];
+	$married = $_POST['married'];
+	$vcode = $_POST['vcode'];
+	$bankcsp = $_POST['bankcsp'];
+	$Qual = $_POST['Qual'];
+	$cspadd = $_POST['cspadd'];
+	$sname = $_POST['sname'];
+	$attachment = $_FILES['attachment10']['tmp_name'];
+	$attachment1 = $_FILES['attachment11']['tmp_name'];
+	$attachment2 = $_FILES['attachment12']['tmp_name'];
+	$attachment3 = $_FILES['attachment13']['tmp_name'];
 
 
-// ADD YOUR DETAILS HERE
-    $mail->Host = 'smtp.gmail.com';        //Sets the SMTP hosts of your Email hosting, this for Godaddy
-    $mail->Port = '465';                                //Sets the default SMTP server port
-    $mail->SMTPAuth = true;                            //Sets SMTP authentication. Utilizes the Username and Password variables
-    $mail->Username = 'yourEmail@gmail.com';                    //Sets SMTP username
-    $mail->Password = 'YourPassword';                    //Sets SMTP password
-    $mail->SMTPSecure = 'ssl';                            //Sets connection prefix. Options are "", "ssl" or "tls"
-    $mail->From = 'designinnovationpatna@gmail.com';                    //Sets the From email address for the message
-    $mail->FromName = 'Trickuweb.Com - Coding Master';                //Sets the From name of the message
-    $mail->AddAddress('praveen@trickuweb', 'Praveen Kumar');        //Adds a "To" address
-// ADD YOUR DETAILS HERE
-    
-    $mail->WordWrap = 50;                            //Sets word wrapping on the body of the message to a given number of characters
-    $mail->IsHTML(true);                            //Sets message type to HTML
-    $mail->AddAttachment($path);                    //Adds an attachment from a path on the filesystem
-    $mail->Subject = 'Application for JOB';                //Sets the Subject of the message
-    $mail->Body = $message;                            //An HTML or plain text message body
-    if ($mail->Send())                                //Send an Email. Return true on success or false on error
-    {
-        $message = '<div class="alert alert-success">Application Successfully Submitted</div>';
-        unlink($path);
-    } else {
-        $message = '<div class="alert alert-danger">There is an Error</div>';
-    }
-}
+		try{
+			//$mail->isSMTP();
+			$mail->Host = 'server.peindia.net.in';
+			$mail->SMTPAuth = true;
+			$mail->Username = 'mailsupport@peindia.net.in'; // Gmail address which you want to use as STMP server//
+			$mail->Password = 'Peindia@123@123';
+			$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+			$mail->Port = '465';
+
+			$mail->setFrom('mailsupport@peindia.net.in'); // Gmail address which you want to use as STMP server//
+			$mail->addAddress('peindiacsp@gmail.com');
+
+			$mail->addAttachment($attachment);    // Optional name
+			$mail->addAttachment($attachment1);    // Optional name
+			$mail->addAttachment($attachment2);    // Optional name
+			$mail->addAttachment($attachment3);    // Optional name
+
+			$mail->isHTML(true);
+			$mail->Subject = "Registration Form Peindia Payments";
+			$mail->Body = "<h3> Name : $name <br> 
+								Father Name : $fname <br> 
+								Mother Name : $mname <br>
+								Gender : $gender <br>
+								Date Of Birth : $dateofbrith <br>								
+								Aadhaar Number : $aadhaar <br>
+								Pan Card Number : $pan <br> 
+								Email ID : $email <br>  
+								Mobile Number : $phone <br> 
+								Aadhaar Address : $adhadd <br> 
+								Are you Married : $married <br> 								
+								Voter Card Number : $vcode <br>	
+								Select CSP Bank : $bankcsp <br>										
+								Qualification : $Qual <br> 
+								CSP Location Address : $cspadd <br>
+								Spouse Name : $sname <br>
+								</h3>";
+
+
+			
+
+			$mail->send();
+			//$alert ='<div class="alert-success"> <span> Registration Successfully ! Thank you for Contacting Us. </span> </div>';
+			$_SESSION['status'] = "Registration Successfully ! Our team will contact with you very soon";
+			$_SESSION['status_code'] = "success";
+		}catch (Exception $e){
+			//$alert ='<div class="alert-error"> <span>'.$e->getMessage().' </span> </div>';
+			$_SESSION['status'] = "Registration Not Successfull ! Plaese try again";
+			$_SESSION['status_code'] = "success";
+		}
+	}
+?>

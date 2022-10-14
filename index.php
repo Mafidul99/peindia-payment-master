@@ -313,6 +313,87 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-blog-card card border-0 shadow-sm">
+                            <div class="blog-img position-relative">
+                                <img src="img/blog/pnb.jpg" class="card-img-top" alt="blog">
+                                <div class="meta-date">
+                                    <strong>27</strong>
+                                    <small>Aug</small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="post-meta mb-2">
+                                    <!--<ul class="list-inline meta-list">
+                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span> Comments
+                                        </li>
+                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span> Share
+                                        </li>
+                                    </ul>-->
+                                </div>
+                                <h3 class="h5 mb-2 card-title">
+                                    <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k">Punjab National Bank (CSP)</a></h3>
+                                <p class="card-text">CSP Provider, PNB personal banking services including loans, credit cards.
+                                </p>
+                                <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k" class="btn btn-primary">Apply Now <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-blog-card card border-0 shadow-sm">
+                            <div class="blog-img position-relative">
+                                <img src="img/blog/cbi.jpg" class="card-img-top" alt="blog">
+                                <div class="meta-date">
+                                    <strong>27</strong>
+                                    <small>Aug</small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="post-meta mb-2">
+                                    <!--<ul class="list-inline meta-list">
+                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span> Comments
+                                        </li>
+                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span> Share
+                                        </li>
+                                    </ul>-->
+                                </div>
+                                <h3 class="h5 mb-2 card-title">
+                                    <atarget="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k">Centel Bank of India (CSP) </a></h3>
+                                <p class="card-text">Savings Account opening· Online Loan.UPI · IMPS · NEFT · RTGS.
+                                </p>
+                                <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-blog-card card border-0 shadow-sm">
+                            <div class="blog-img position-relative">
+                                <img src="img/blog/bob.jpg" class="card-img-top" alt="blog">
+                                <div class="meta-date">
+                                    <strong>27</strong>
+                                    <small>Aug</small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="post-meta mb-2">
+                                    <!--<ul class="list-inline meta-list">
+                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span> Comments
+                                        </li>
+                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span> Share
+                                        </li>
+                                    </ul>-->
+                                </div>
+                                <h3 class="h5 mb-2 card-title">
+                                    <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k">Bank Of Boroda (CSP) </a></h3>
+                                <p class="card-text">Savings Account opening· Online Loan. UPI · IMPS · NEFT · RTGS.
+                                </p>
+                                <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--blog section end-->

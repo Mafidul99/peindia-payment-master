@@ -66,9 +66,7 @@ include_once('mail.php');
 
     <div id="loading"></div>
     <!--------------header section start--------->
-
     <?php include_once('pages/header.php'); ?>
-
     <!------------header section end------------->
 
     <!--body content wrap start-->
@@ -80,7 +78,7 @@ include_once('mail.php');
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-7">
                         <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Suryoday Bank CSP</h1>
+                            <h1 class="text-white mb-0">CSP APPLICATION </h1>
                             <div class="custom-breadcrumb">
                                 <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
                                     <li class="list-inline-item breadcrumb-item">
@@ -99,82 +97,54 @@ include_once('mail.php');
         <!--contact us section start-->
         <section class="contact-us-section ptb-70">
             <div class="container contact">
-                <div class="col-12 pb-3 message-box d-none">
-                    
-                </div>
                 <div class="banklogo">
-                <img  src="../New_Bank_CSP_2022/suryadaylogo.jpg" alt="LOGO">
+                <img  src="../New_Bank_CSP_2022/bmitra-500x500.png" alt="LOGO">
                 </div>                
                 <div class="row justify-content-around">
                     <div class="col-md-11">
                         <div class="contact-us-form gray-light-bg rounded p-5">                          
-                            <h3 class="text-center">Suryoday Bank CSP Registration Form</h3> <hr>
+                            <h3 class="text-center">CSP Registration Form</h3>
+                            <p class="text-center">Bank of Baroda / Punjab National Bank / Central Bank of India /
+                            Bandhan Bank / Jana Small Finance Bank / HDFC Bank / Assam Gramin Vikash Bank CSP Provied</p> <hr>                            
                             <form action="" method="POST" id="contactForm" class="contact-us-form" enctype="multipart/form-data">
                             <h5>Information</h5> <hr>
-                              <label class="textform1"> Your Name <span class="formcomb">*</span> </label>                                
-                                    <div class="form-row">                                    
-                                    <div class="form-group col-md-2">
-                                            <select id="inputState" class="form-control">
-                                              <option selected>Mr.</option>
-                                              <option>Mrs.</option>
-                                              <option>Ms.</option>
-                                            </select>
-                                          </div>                                    
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="fname" placeholder="First Name" required="required">
+                              <label class="textform1"> Your Name <span class="formcomb">*</span> </label>
+                                    <div class="form-row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Enter Name" required="required">
                                         </div>
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="lname" placeholder="Last Name"  required="required">
-                                        </div>
+                                    </div>
                                     </div>
                                     <label class="textform1"> Father Name <span class="formcomb">*</span> </label>                                
                                     <div class="form-row">                                    
-                                    <div class="form-group col-md-2">
-                                            <select id="inputState" class="form-control">
-                                              <option selected>Mr.</option>
-                                              <option>Mrs.</option>
-                                              <option>Ms.</option>
-                                            </select>
-                                          </div>                                    
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="ffname" placeholder="First Name" required="required">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="fname" placeholder="Enter Name" required="required">
                                         </div>
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="flname" placeholder="Last Name" required="required">
-                                        </div>
+                                    </div>
                                     </div>
                                     <label class="textform1"> Mother Name <span class="formcomb">*</span> </label>                                
                                     <div class="form-row">                                    
-                                    <div class="form-group col-md-2">
-                                            <select id="inputState" class="form-control">
-                                              <option selected>Mrs.</option>
-                                              <option>Ms.</option>
-                                            </select>
-                                          </div>                                    
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="mfname" placeholder="First Name"  required="required">
-                                        </div>
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="mlname" placeholder="Last Name"  required="required">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="mname" placeholder="Enter Name" required="required">
                                         </div>
                                     </div>
-                                    <div class="form-row"> 
-                                        <div class="form-group col-md-3">
-                                          <label class="textform1"> Date of Birth <span class="formcomb">*</span> </label> 
-                                            <input type="date" name="bday">                                                                                   
-                                          </div>                                   
-                                        <div class="form-group col-md-4">
+                                    </div>
+                                    <div class="form-row">                                                                            
+                                        <div class="form-group col-md-6">
                                         <label class="textform1"> Gender <span class="formcomb">*</span> </label> 
-                                        <select id="inputState" class="form-control">
-                                              <option selected>Select...</option>
+                                        <select id="inputState" class="form-control" name="gender" required="required">
+                                              <option selected>--- Select Gender ---</option>
                                               <option>Male</option>
                                               <option>Female</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-md-5">
-                                        <label class="textform1"> Mobile Number <span class="formcomb">*</span> </label> 
-                                        <input type="text" class="form-control" name="phone" placeholder="Enter Mobile Number"  required="required">                                                                                   
-                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label class="textform1"> Date of Birth <span class="formcomb">*</span> </label> 
+                                          <input type="date" class="form-control" name="dateofbrith" required="required">                                                               
+                                        </div>                                        
                                     </div>
                                     <div class="form-row">                                    
                                         <div class="form-group col-md-6">
@@ -192,42 +162,66 @@ include_once('mail.php');
                                         <input type="email" class="form-control" name="email" placeholder="Enter Email" required="required">
                                         </div>
                                         <div class="form-group col-md-6">
-                                        <label class="textform1"> Qualification <span class="formcomb">*</span> </label>
-                                          <input type="text" class="form-control" name="Qual" placeholder="Enter Qualification" required="required">
+                                        <label class="textform1"> Mobile Number <span class="formcomb">*</span> </label> 
+                                        <input type="text" class="form-control" name="phone" placeholder="Enter Mobile Number"  required="required">                                                                                   
                                         </div>
                                     </div>
                                 <div class="form-row">                                    
                                     <div class="col-12">
                                         <div class="form-group">
-                                        <label class="textform1"> Full Address <span class="formcomb">*</span> </label>
-                                            <input type="text" class="form-control" name="add" placeholder="Enter Address" required="required">
+                                        <label class="textform1"> Full Address as Per Aadhaar <span class="formcomb">*</span> </label>
+                                            <input type="text" class="form-control" name="adhadd" placeholder="Enter Address" required="required">
                                         </div>
                                     </div> 
                                     </div>
                                     <div class="form-row">                                    
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-md-6">
                                         <label class="textform1"> Are you Married  <span class="formcomb">*</span> </label> 
-                                        <select id="inputState" class="form-control">
-                                              <option selected>Select....</option>
+                                        <select id="inputState" class="form-control" name="married" required="required" >
+                                              <option selected>--- Select ---</option>
                                               <option>Yes</option>
                                               <option>No</option>
                                             </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <label class="textform1"> Village Code <span class="formcomb">*</span> </label>
+                                          <input type="text" class="form-control" name="vcode" placeholder="Enter Village Code" required="required">
                                         </div> 
+                                    </div>
+                                    <div class="form-row">                                    
+                                        <div class="form-group col-md-6">
+                                        <label class="textform1"> Select Bank of CSP  <span class="formcomb">*</span> </label> 
+                                        <select id="inputState" class="form-control" name="bankcsp" required="required">
+                                              <option selected>--- Select Bank ---</option>
+                                              <option>Bank of Baroda</option>
+                                              <option>Punjab National Bank</option>
+                                              <option>Central Bank of India</option>
+                                              <option>Bandhan Bank</option>
+                                              <option>Jana Small Finance Bank </option>
+                                              <option>HDFC Bank </option>
+                                              <option>Assam Gramin Vikash Bank </option>
+                                            </select>
+                                        </div>                                
+                                        
+                                        <div class="form-group col-md-6">
+                                        <label class="textform1"> Qualification <span class="formcomb">*</span> </label>
+                                          <input type="text" class="form-control" name="Qual" placeholder="Enter Qualification" required="required">
+                                        </div>
+
+                                        <div class="col-12">
+                                        <div class="form-group">
+                                        <label class="textform1"> Full Address of CSP Location <span class="formcomb">*</span> </label>
+                                            <input type="text" class="form-control" name="cspadd" placeholder="Enter Address" required="required">
+                                        </div>
+                                    </div> 
                                     </div>
                                     <label class="textform1"> Spouse Name <span class="formcomb"></span> </label>                                
                                     <div class="form-row">                                    
-                                    <div class="form-group col-md-2">
-                                            <select id="inputState" class="form-control">
-                                              <option selected>Mrs.</option>
-                                              <option>Ms.</option>
-                                            </select>
-                                          </div>                                    
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="sfname" placeholder="First Name">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="sname" placeholder="Enter Name">
                                         </div>
-                                        <div class="form-group col-md-5">
-                                            <input type="text" class="form-control" name="slname" placeholder="Last Name">
-                                        </div>
+                                    </div>
                                     </div> 
                                     <br>
                                     <h5>Documents Upload</h5><hr>
@@ -235,12 +229,12 @@ include_once('mail.php');
                                         <div class="form-group col-md-6">
                                             <label >Upload Aadhaar Card (Size - 500kb to 1MB)
                                                <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachmentA" required>
+                                            <input type="file" class="form-control" name="attachment10" required>
                                         </div>                                    
                                         <div class="form-group col-md-6">
                                             <label >Upload Pan Card (Size - 500kb to 1MB)
                                                <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachmentP" required>
+                                            <input type="file" class="form-control" name="attachment11" required>
                                         </div>
                                     </div>
                                     <br>
@@ -248,12 +242,12 @@ include_once('mail.php');
                                         <div class="form-group col-md-6">
                                             <label >Your Current Photo Upload  (Size - 500kb to 1MB) 
                                               <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachmentPo" required>
+                                            <input type="file" class="form-control" name="attachment12" required>
                                         </div>                                    
                                         <div class="form-group col-md-6">
-                                            <label >Your Signature (Size - 500kb to 1MB)
+                                            <label >Your Voter Card Upload (Size - 500kb to 1MB)
                                                <strong class="jpgcolor"> (only jpg File)*</strong></label>
-                                            <input type="file" class="form-control" name="attachmentSi" required>
+                                            <input type="file" class="form-control" name="attachment13" required>
                                         </div>
                                         
                                     </div>
@@ -276,6 +270,7 @@ include_once('mail.php');
                                     </div>
                                 </div>
                             </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -298,6 +293,9 @@ include_once('mail.php');
         window.history.replaceState(null, null, window.location.href);
     }
 </script>
+
+
+
 <?php
 if(isset($_SESSION['status']) && $_SESSION['status'] !='')
 {

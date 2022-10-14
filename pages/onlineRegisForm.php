@@ -32,7 +32,7 @@ $mail = new PHPMailer(true);
 			$mail->Port = '465';
 
 			$mail->setFrom('mailsupport@peindia.net.in'); // Gmail address which you want to use as STMP server//
-			$mail->addAddress('peindiapay@hotmail.com');
+			$mail->addAddress('peindiacsp@gmail.com');
 
 			$mail->addAttachment($attachment);    // Optional name
 			$mail->addAttachment($attachment2);    // Optional name
