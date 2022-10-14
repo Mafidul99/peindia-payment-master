@@ -5899,6 +5899,13 @@ small {
     text-transform: uppercase;
 }
 
+.bbps1-h4 {
+    font-size: 25px;
+    color: #000000;
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+}
+
 .modal-title {
     font-size: 20px;
     text-transform: uppercase;

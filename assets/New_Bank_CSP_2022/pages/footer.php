@@ -40,7 +40,7 @@
                                         <a class="nav-link" href="https://peindia.net.in/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.php">About Us</a>
+                                        <a class="nav-link" href="../../about-us.php">About Us</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="https://peindia.cab/" target="_blank">Cab Service</a>
@@ -49,10 +49,10 @@
                                         <a class="nav-link" href="#" target="_blank">CSC Academy</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact-us.php">Contact Us</a>
+                                        <a class="nav-link" href="../../contact-us.php">Contact Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nsdl-csp.php">NSDL CSP</a>
+                                        <a href="../../nsdl-csp.php">NSDL CSP</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#">Suryoday Bank CSP</a>
@@ -66,25 +66,25 @@
                                 <h4 class="text-white">SERVICES</h4>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="website-design-and-development-in-guwahati.php">Website Development</a>
+                                        <a class="nav-link" href="../../website-design-and-development-in-guwahati.php">Website Development</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="software-development-in-guwahati.php">Software Development</a>
+                                        <a class="nav-link" href="../../software-development-in-guwahati.php">Software Development</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="mobile-application-development-in-guwahati.php">Mobile Application</a>
+                                        <a class="nav-link" href="../../mobile-application-development-in-guwahati.php">Mobile Application</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="digital-marketing-in-guwahati.php">Digital Marketing</a>
+                                        <a class="nav-link" href="../../digital-marketing-in-guwahati.php">Digital Marketing</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="terms_and_condition.php">Terms & Conditions</a>
+                                        <a class="nav-link" href="../../terms_and_condition.php">Terms & Conditions</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="privacy_policy.php">Privacy Policy</a>
+                                        <a class="nav-link" href="../../privacy_policy.php">Privacy Policy</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="grievance_policy.php">Grievance Policy</a>
+                                        <a class="nav-link" href="../../grievance_policy.php">Grievance Policy</a>
                                     </li>
                                 </ul>
                             </div>
@@ -128,8 +128,8 @@
                 </div>
                 <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
                     <ul class="list-inline policy-nav text-right social-list">
-                        <li class="list-inline-item "><a class="linktext" href="privacy_policy.php" target="_blank">Privacy Policy</a></li>
-                        <li class="list-inline-item "><a class="linktext" href="terms_and_condition.php" target="_blank">Terms & Conditions</a></li>
+                        <li class="list-inline-item "><a class="linktext" href="../../privacy_policy.php" target="_blank">Privacy Policy</a></li>
+                        <li class="list-inline-item "><a class="linktext" href="../../terms_and_condition.php" target="_blank">Terms & Conditions</a></li>
                     </ul>
                 </div>
             </div>
