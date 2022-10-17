@@ -648,8 +648,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>Suryoday Bank CSP</h5>
-                                    <p>Suryoday Small Finance Bank Ltd. CIN No: L65923MH2008PLC261472. </p>
+                                    <h5> Bank CSP Provied</h5>
+                                    <p>BOB/PNB/CBI/AGVB </p>
                                 </div>
                             </div>
                             <div class="process-line-l"></div>

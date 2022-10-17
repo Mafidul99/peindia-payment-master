@@ -52,10 +52,7 @@
                                         <a class="nav-link" href="contact-us.php">Contact Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="nsdl-csp.php">NSDL CSP</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#">Suryoday Bank CSP</a>
+                                        <a href="All_CSP_2022.php"> Bank CSP </a>
                                     </li>
                                 </ul>
 
