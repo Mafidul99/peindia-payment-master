@@ -222,6 +222,41 @@
             </div>
         </section>
         <!--about us section end-->
+        <br /><br/>
+
+        <section class="call-to-action ptb-70" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-9">
+                        <div class="section-heading text-center text-black mb-5">
+                            <img src="image/Mera_Adhikar1.png" alt="meraadhikarimg" class="img-fluid"/>
+                            <p class="lead">Ccreating a better
+                                        Socio Economic Environment and an
+                                        Atmanirbhar Bharat..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-12">
+                        <div class="analysis-form-wrap text-center">
+
+
+                            <div class="col-lg-12 col-md-12 p-0">
+                                <div class="form-group">
+                                    <center><a href="#" class="btn secondary-outline-btn2">
+                                            Registration Now</a></center>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-image d-none d-lg-block d-md-block">
+                <img src="img/MERA.png" width="160" class="img-left" alt="cta">
+                <img src="img/MERA2.png" width="250" class="img-right" alt="cta">
+            </div>
+        </section>
 
         <!--blog section start-->
         <section class="our-blog-section ptb-30">
