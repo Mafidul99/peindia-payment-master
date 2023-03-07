@@ -8,9 +8,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="ti-menu"></span>
             </button>
-            <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">                
+            <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu">
-                    <li><a href="https://peindia.net.in/">Home</a></li>                    
+                    <li><a href="https://peindia.net.in/">Home</a></li>
                     <li><a href="#" class="dropdown-toggle">Govt. Services</a>
                         <ul class="sub-menu">
                             <li><a href="website-design-and-development-in-guwahati.php">Website Development</a></li>
@@ -31,7 +31,7 @@
                             <li><a href="flight.php">Flight Booking</a></li>
                             <li><a href="voter&update.php">Voter ID Enrollment</a></li>
                             <li><a href="aadhaar-pay.php">Aadhaar Pay</a></li>
-                            <li><a href="irctc.php">Railway Ticket Booking</a></li>                            
+                            <li><a href="irctc.php">Railway Ticket Booking</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="dropdown-toggle"> ATM</a>
@@ -41,20 +41,30 @@
                         </ul>
                     </li>
                     <li><a href="about-us.php">About Us</a></li>
-                    <li><a href="contact-us.php">Contact Us</a></li>                    
-                    <li><a href="https://api.peindia.net.in/login/" target="_blank" 
-                    class="btn secondary-solid-btn check-btn"> Login</a>
-                    </ul>
+                    <li><a href="contact-us.php">Contact Us</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle btn secondary-solid-btn3 check-btn">Log-In</a>
+                        <ul class="sub-menu">
+                            <li><a target="_blank" href="#">Mera Adhikar Login</a></li>
+                            <li><a target="_blank" href="https://www.pmjay.utiitsl.com/pmjayecard/">Ayushman Login</a></li>
+                            <li><a target="_blank" href="https://www.psaonline.utiitsl.com/psaonline/showLogin">UTI-PSA Login</a></li>
+                        </ul>
                     </li>
+
+                    <li>
+                        <a href="https://api.peindia.net.in/login" target="_blank" class="btn secondary-solid-btn check-btn"> Retailer Login</a>
                     </li>
-                </ul>                
-            </div>            
-        </div>
-            <ul>
-                <li>
-                    <a href="All_CSP_2022.php" class="btn btn-info check-btn"> 
-                        <img src="image/click.gif" width=22px height=22px> CSP APPLY</a>
+                </ul>
                 </li>
-            </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="All_CSP_2022.php" class="btn btn-info check-btn">
+                    <img src="image/click.gif" width=22px height=22px> CSP APPLY</a>
+            </li>
+        </ul>
     </nav>
-    </header>
+</header>

@@ -102,50 +102,77 @@
                 </div>
             </div>
         </section>
-        <!--hero section end-->
-
-        <!--promo section start-->
-        <section class="promo-section ptb-100">
+        <!--hero section end--> <hr>
+        <!--Mear Adhikar section-->
+        <section class="call-to-action ptb-70" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-lg-4">
-                        <a href="#">
-                            <div class="single-promo-2 single-promo-hover rounded text-center white-bg p-5 h-100">
-                                <div class="circle-icon">
-                                    <span class="ti-desktop text-white"></span>
-                                </div>
-                                <h5>Design & Development</h5>
-                                <p>Responsive and mobile friendly layout with secure coding.</p>
-                            </div>
-                        </a>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-9">
+                        <div class="section-heading text-center text-black mb-5">
+                            <img src="image/Mera_Adhikar1.png" alt="meraadhikarimg" class="img-fluid"/>
+                            <p class="lead">Ccreating a better
+                                        Socio Economic Environment and an
+                                        Atmanirbhar Bharat..</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-4">
-                        <a href="#">
-                            <div class="single-promo-2 single-promo-hover rounded text-center white-bg p-5 h-100">
-                                <div class="circle-icon">
-                                    <span class="ti-thumb-up text-white"></span>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-12">
+                        <div class="analysis-form-wrap text-center">
+
+
+                            <div class="col-lg-12 col-md-12 p-0">
+                                <div class="form-group">
+                                    <center><a href="#" class="btn secondary-outline-btn2">
+                                            Registration Now</a></center>
+                                    
                                 </div>
-                                <h5>Digital Marketing</h5>
-                                <p>Promote your bussiness digitally and make your brand.</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <a href="#">
-                            <div class="single-promo-2 single-promo-hover rounded text-center white-bg p-5 h-100">
-                                <div class="circle-icon">
-                                    <span class="ti-headphone-alt text-white"></span>
-                                </div>
-                                <h5>24/7 Support</h5>
-                                <p>Dedicated online technical support available 24/7.</p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="cta-image d-none d-lg-block d-md-block">
+                <img src="img/MERA.png" width="160" class="img-left" alt="cta">
+                <img src="img/MERA2.png" width="250" class="img-right" alt="cta">
+            </div>
         </section>
-        <!--promo section end-->
+        <!--Mear Adhikar section End-->
+        <!--Ayushman Bharath section--> <hr>
+        <section class="call-to-action ptb-70" style="background: url('img/ctc-2.png)no-repeat center center / cover">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-9">
+                        <div class="section-heading text-center text-black mb-5">
+                            <h2 class="text-black">AYUSHMAN BHARAT</h2>
+                            <!--<img src="image/Mera_Adhikar1.png" alt="meraadhikarimg" class="img-fluid"/>-->
+                            <p class="lead">Ayushman Bharat
+                                eCard for Pradhan Mantri Jan Arogya Yojana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-12">
+                        <div class="analysis-form-wrap text-center">
 
+
+                            <div class="col-lg-12 col-md-12 p-0">
+                                <div class="form-group">
+                                    <center><a href="https://www.pmjay.utiitsl.com/pmjayecard/" target="_blank" class="btn secondary-outline-btn2">
+                                            Login Now</a></center>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-image d-none d-lg-block d-md-block">
+                <img src="img/ayushman2.png" width="300" class="img-left" alt="cta">
+                <img src="img/ayushman.png" width="250" class="img-right" alt="cta">
+            </div>
+        </section>
+        <!--Ayushman Bharath section End--> <hr>
         <!--about us section start-->
         <section class="about-us-section ptb-30 gray-light-bg">
             <div class="container">
@@ -222,42 +249,47 @@
             </div>
         </section>
         <!--about us section end-->
-        <br /><br/>
-
-        <section class="call-to-action ptb-70" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
+        <!--promo section start-->
+        <section class="promo-section ptb-100">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-heading text-center text-black mb-5">
-                            <img src="image/Mera_Adhikar1.png" alt="meraadhikarimg" class="img-fluid"/>
-                            <p class="lead">Ccreating a better
-                                        Socio Economic Environment and an
-                                        Atmanirbhar Bharat..</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-12">
-                        <div class="analysis-form-wrap text-center">
-
-
-                            <div class="col-lg-12 col-md-12 p-0">
-                                <div class="form-group">
-                                    <center><a href="#" class="btn secondary-outline-btn2">
-                                            Registration Now</a></center>
-                                    
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <a href="#">
+                            <div class="single-promo-2 single-promo-hover rounded text-center white-bg p-5 h-100">
+                                <div class="circle-icon">
+                                    <span class="ti-desktop text-white"></span>
                                 </div>
+                                <h5>Design & Development</h5>
+                                <p>Responsive and mobile friendly layout with secure coding.</p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <a href="#">
+                            <div class="single-promo-2 single-promo-hover rounded text-center white-bg p-5 h-100">
+                                <div class="circle-icon">
+                                    <span class="ti-thumb-up text-white"></span>
+                                </div>
+                                <h5>Digital Marketing</h5>
+                                <p>Promote your bussiness digitally and make your brand.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <a href="#">
+                            <div class="single-promo-2 single-promo-hover rounded text-center white-bg p-5 h-100">
+                                <div class="circle-icon">
+                                    <span class="ti-headphone-alt text-white"></span>
+                                </div>
+                                <h5>24/7 Support</h5>
+                                <p>Dedicated online technical support available 24/7.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="cta-image d-none d-lg-block d-md-block">
-                <img src="img/MERA.png" width="160" class="img-left" alt="cta">
-                <img src="img/MERA2.png" width="250" class="img-right" alt="cta">
             </div>
         </section>
-
+        <!--promo section end-->  
         <!--blog section start-->
         <section class="our-blog-section ptb-30">
             <div class="container">
@@ -369,10 +401,10 @@
                                     </ul>-->
                                 </div>
                                 <h3 class="h5 mb-2 card-title">
-                                    <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k">Punjab National Bank (CSP)</a></h3>
+                                    <a href="assets/New_Bank_CSP_2022/index.php">Punjab National Bank (CSP)</a></h3>
                                 <p class="card-text">CSP Provider, PNB personal banking services including loans, credit cards.
                                 </p>
-                                <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k" class="btn btn-primary">Apply Now <span class="ti-arrow-right"></span></a>
+                                <a href="assets/New_Bank_CSP_2022/index.php" class="btn btn-primary">Apply Now <span class="ti-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -395,10 +427,10 @@
                                     </ul>-->
                                 </div>
                                 <h3 class="h5 mb-2 card-title">
-                                    <atarget="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k">Centel Bank of India (CSP) </a></h3>
+                                    <a href="assets/New_Bank_CSP_2022/index.php">Centel Bank of India (CSP) </a></h3>
                                 <p class="card-text">Savings Account opening· Online Loan.UPI · IMPS · NEFT · RTGS.
                                 </p>
-                                <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
+                                <a href="assets/New_Bank_CSP_2022/index.php" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -421,10 +453,10 @@
                                     </ul>-->
                                 </div>
                                 <h3 class="h5 mb-2 card-title">
-                                    <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k">Bank Of Boroda (CSP) </a></h3>
+                                    <a  href="assets/New_Bank_CSP_2022/index.php">Bank Of Boroda (CSP) </a></h3>
                                 <p class="card-text">Savings Account opening· Online Loan. UPI · IMPS · NEFT · RTGS.
                                 </p>
-                                <a target="_blank" href="https://forms.zohopublic.in/peindiacsp/form/CSPAPPLICATIONFROM/formperma/3gonomWI-kMhzEnAbvnyY1FKyGf0MEHU36h980wIO6k" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
+                                <a href="assets/New_Bank_CSP_2022/index.php" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -699,10 +731,8 @@
             </div>
         </section>
         <!--work process section end-->
-
-
         <!--call to action section start-->
-        <section class="call-to-action ptb-70" style="background: url('img/ctc-2.png')no-repeat center center / cover">
+        <section class="call-to-action ptb-70" style="background:url('img/ctc-2.png')no-repeat center center / cover">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-9">
