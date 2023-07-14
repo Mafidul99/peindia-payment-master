@@ -49,17 +49,7 @@
     <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 
-    <!--<div id="preloader">
-        <div class="loader1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>-->
-
-    <div id="loading"></div>
+    
     <!--------------header section start--------->
 
     <?php include('pages/header.php'); ?>

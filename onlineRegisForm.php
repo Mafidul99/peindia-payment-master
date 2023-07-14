@@ -34,8 +34,8 @@ $mail = new PHPMailer(true);
 			$mail->setFrom('mailsupport@peindia.net.in'); // Gmail address which you want to use as STMP server//
 			$mail->addAddress('peindiapay@hotmail.com');
 
-			$mail->addAttachment($attachment);    // Optional name
-			$mail->addAttachment($attachment2);    // Optional name
+			$mail->addAttachment($attachment, $_FILES['attachment']['name']);    // Optional name
+			$mail->addAttachment($attachment2, $_FILES['attachment2']['name']);    // Optional name
 
 			$mail->isHTML(true);
 			$mail->Subject = "Registration Form Peindia Payments";

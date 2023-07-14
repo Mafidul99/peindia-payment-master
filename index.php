@@ -68,7 +68,7 @@
         </div>
     </div>-->
 
-    <div id="loading"></div>
+    <!--<div id="loading"></div>-->
 <!--------------header section start--------->
 
 <?php include('pages/header.php'); ?>
@@ -102,77 +102,7 @@
                 </div>
             </div>
         </section>
-        <!--hero section end--> <hr>
-        <!--Mear Adhikar section-->
-        <section class="call-to-action ptb-70" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-heading text-center text-black mb-5">
-                            <img src="image/Mera_Adhikar1.png" alt="meraadhikarimg" class="img-fluid"/>
-                            <p class="lead">Ccreating a better
-                                        Socio Economic Environment and an
-                                        Atmanirbhar Bharat..</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-12">
-                        <div class="analysis-form-wrap text-center">
-
-
-                            <div class="col-lg-12 col-md-12 p-0">
-                                <div class="form-group">
-                                    <center><a href="#" class="btn secondary-outline-btn2">
-                                            Registration Now</a></center>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cta-image d-none d-lg-block d-md-block">
-                <img src="img/MERA.png" width="160" class="img-left" alt="cta">
-                <img src="img/MERA2.png" width="250" class="img-right" alt="cta">
-            </div>
-        </section>
-        <!--Mear Adhikar section End-->
-        <!--Ayushman Bharath section--> <hr>
-        <section class="call-to-action ptb-70" style="background: url('img/ctc-2.png)no-repeat center center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-heading text-center text-black mb-5">
-                            <h2 class="text-black">AYUSHMAN BHARAT</h2>
-                            <!--<img src="image/Mera_Adhikar1.png" alt="meraadhikarimg" class="img-fluid"/>-->
-                            <p class="lead">Ayushman Bharat
-                                eCard for Pradhan Mantri Jan Arogya Yojana</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-12">
-                        <div class="analysis-form-wrap text-center">
-
-
-                            <div class="col-lg-12 col-md-12 p-0">
-                                <div class="form-group">
-                                    <center><a href="https://www.pmjay.utiitsl.com/pmjayecard/" target="_blank" class="btn secondary-outline-btn2">
-                                            Login Now</a></center>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cta-image d-none d-lg-block d-md-block">
-                <img src="img/ayushman2.png" width="300" class="img-left" alt="cta">
-                <img src="img/ayushman.png" width="250" class="img-right" alt="cta">
-            </div>
-        </section>
-        <!--Ayushman Bharath section End--> <hr>
+        <!--hero section end-->
         <!--about us section start-->
         <section class="about-us-section ptb-30 gray-light-bg">
             <div class="container">
@@ -376,87 +306,6 @@
                                 <h3 class="h5 mb-2 card-title"><a href="micro-atm-api.php">MICRO ATM</a></h3>
                                 <p class="card-text">No monthly rental charges, No hidden charges, Real time bank settlement etc. </p>
                                 <a href="micro-atm-api.php" class="detail-link">Click Here <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <div class="blog-img position-relative">
-                                <img src="img/blog/pnb.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>27</strong>
-                                    <small>Aug</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <!--<ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span> Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span> Share
-                                        </li>
-                                    </ul>-->
-                                </div>
-                                <h3 class="h5 mb-2 card-title">
-                                    <a href="assets/New_Bank_CSP_2022/index.php">Punjab National Bank (CSP)</a></h3>
-                                <p class="card-text">CSP Provider, PNB personal banking services including loans, credit cards.
-                                </p>
-                                <a href="assets/New_Bank_CSP_2022/index.php" class="btn btn-primary">Apply Now <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <div class="blog-img position-relative">
-                                <img src="img/blog/cbi.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>27</strong>
-                                    <small>Aug</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <!--<ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span> Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span> Share
-                                        </li>
-                                    </ul>-->
-                                </div>
-                                <h3 class="h5 mb-2 card-title">
-                                    <a href="assets/New_Bank_CSP_2022/index.php">Centel Bank of India (CSP) </a></h3>
-                                <p class="card-text">Savings Account opening· Online Loan.UPI · IMPS · NEFT · RTGS.
-                                </p>
-                                <a href="assets/New_Bank_CSP_2022/index.php" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <div class="blog-img position-relative">
-                                <img src="img/blog/bob.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>27</strong>
-                                    <small>Aug</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <!--<ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span> Comments
-                                        </li>
-                                        <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span> Share
-                                        </li>
-                                    </ul>-->
-                                </div>
-                                <h3 class="h5 mb-2 card-title">
-                                    <a  href="assets/New_Bank_CSP_2022/index.php">Bank Of Boroda (CSP) </a></h3>
-                                <p class="card-text">Savings Account opening· Online Loan. UPI · IMPS · NEFT · RTGS.
-                                </p>
-                                <a href="assets/New_Bank_CSP_2022/index.php" class="btn btn-primary"> Apply Now <span class="ti-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
