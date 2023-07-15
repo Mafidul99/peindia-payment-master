@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu">
                     <li><a href="https://peindia.net.in/">Home</a></li>
-                    <li><a href="#" class="dropdown-toggle">Govt. Services</a>
+                    <li><a href="#" class="dropdown-toggle">Services</a>
                         <ul class="sub-menu">
                             <li><a href="website-design-and-development-in-guwahati.php">Website Development</a></li>
                             <li><a href="software-development-in-guwahati.php">Software Development</a></li>
@@ -19,19 +19,14 @@
                             <li><a href="digital-marketing-in-guwahati.php">Digital Marketing</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="dropdown-toggle"> All Services</a>
+                    <li><a href="#" class="dropdown-toggle">Bank Services</a>
                         <ul class="sub-menu">
-                            <li><a href="dmt.php">Money Transfer</a></li>
                             <li><a href="bbps.php">Electricity & Gas Bill</a></li>
                             <li><a href="dth.php">DTH</a></li>
                             <li><a href="pan.php">Pan Card</a></li>
-                            <li><a href="sms.php">Bulk SMS</a></li>
                             <li><a href="micro-atm.php">Micro ATM</a></li>
                             <li><a href="mobile.php">Mobile</a></li>
-                            <li><a href="flight.php">Flight Booking</a></li>
-                            <li><a href="voter&update.php">Voter ID Enrollment</a></li>
                             <li><a href="aadhaar-pay.php">Aadhaar Pay</a></li>
-                            <li><a href="irctc.php">Railway Ticket Booking</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="dropdown-toggle"> ATM</a>
@@ -52,7 +47,7 @@
                     </li>-->
 
                     <li>
-                        <a href="https://peindia.net.in/login" target="_blank" class="btn secondary-solid-btn check-btn"> Retailer Login</a>
+                        <a href="https://peindia.net.in/login" target="_blank" class="btn secondary-solid-btn check-btn">LOGIN</a>
                     </li>
                 </ul>
                 </li>

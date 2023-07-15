@@ -542,8 +542,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5>IRCTC </h5>
-                                    <p>Indian Railway Catering and Tourism Corporation is an Indian. </p>
+                                    <h5>BBPS </h5>
+                                    <p> BBPS is an integrated bill payment system in service to customers </p>
                                 </div>
                             </div>
                             <div class="process-line-r"></div>
@@ -564,8 +564,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-7">
-                                    <h5> Bank CSP Provied</h5>
-                                    <p>BOB/PNB/CBI/AGVB </p>
+                                    <h5> NSDL PAYMENTS BANK</h5>
+                                    <p> NSDL Jiffy makes your everyday banking life better with simple</p>
                                 </div>
                             </div>
                             <div class="process-line-l"></div>

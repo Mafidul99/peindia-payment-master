@@ -92,7 +92,7 @@
                                 </div>
                                 <div>
                                     <h5 class="mb-0">Call Us</h5>
-                                    <p class="text-muted mb-0"> +91-7099021308</p>
+                                    <p class="text-muted mb-0"> +91-7099021305</p>
                                 </div>
                             </div>
                         </div>
